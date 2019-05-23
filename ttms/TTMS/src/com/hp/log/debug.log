@@ -1,0 +1,456 @@
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.logging.LogFactory >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Logging initialized using 'org.mybatis.generator.logging.commons.JakartaCommonsLoggingLogFactory@240237d2' adapter.
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Retrieving column information for table "user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Host", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "User", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Select_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Insert_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Update_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Delete_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Drop_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Reload_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Shutdown_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Process_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "File_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Grant_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "References_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Index_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Alter_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Show_db_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Super_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_tmp_table_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Lock_tables_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Execute_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Repl_slave_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Repl_client_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_view_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Show_view_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_routine_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Alter_routine_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_user_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Event_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Trigger_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_tablespace_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "ssl_type", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "ssl_cipher", data type -4, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "x509_issuer", data type -4, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "x509_subject", data type -4, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_questions", data type 4, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_updates", data type 4, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_connections", data type 4, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_user_connections", data type 4, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "plugin", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "authentication_string", data type -1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_expired", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_last_changed", data type 93, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_lifetime", data type 5, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "account_locked", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_role_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Drop_role_priv", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_reuse_history", data type 5, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_reuse_time", data type 5, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_require_current", data type 1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "User_attributes", data type -1, in table "mysql..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "id", data type 4, in table "ttms..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "name", data type 12, in table "ttms..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password", data type 1, in table "ttms..user"
+2019-05-19 22:16:14 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "mailbox", data type 1, in table "ttms..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.logging.LogFactory >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Logging initialized using 'org.mybatis.generator.logging.commons.JakartaCommonsLoggingLogFactory@240237d2' adapter.
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Retrieving column information for table "user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Host", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "User", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Select_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Insert_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Update_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Delete_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Drop_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Reload_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Shutdown_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Process_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "File_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Grant_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "References_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Index_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Alter_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Show_db_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Super_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_tmp_table_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Lock_tables_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Execute_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Repl_slave_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Repl_client_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_view_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Show_view_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_routine_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Alter_routine_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_user_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Event_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Trigger_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_tablespace_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "ssl_type", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "ssl_cipher", data type -4, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "x509_issuer", data type -4, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "x509_subject", data type -4, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_questions", data type 4, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_updates", data type 4, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_connections", data type 4, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_user_connections", data type 4, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "plugin", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "authentication_string", data type -1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_expired", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_last_changed", data type 93, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_lifetime", data type 5, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "account_locked", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_role_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Drop_role_priv", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_reuse_history", data type 5, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_reuse_time", data type 5, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_require_current", data type 1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "User_attributes", data type -1, in table "mysql..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "id", data type 4, in table "ttms..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "name", data type 12, in table "ttms..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password", data type 1, in table "ttms..user"
+2019-05-19 22:18:41 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "mailbox", data type 1, in table "ttms..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.logging.LogFactory >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Logging initialized using 'org.mybatis.generator.logging.commons.JakartaCommonsLoggingLogFactory@240237d2' adapter.
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Retrieving column information for table "user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Host", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "User", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Select_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Insert_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Update_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Delete_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Drop_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Reload_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Shutdown_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Process_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "File_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Grant_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "References_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Index_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Alter_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Show_db_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Super_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_tmp_table_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Lock_tables_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Execute_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Repl_slave_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Repl_client_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_view_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Show_view_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_routine_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Alter_routine_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_user_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Event_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Trigger_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_tablespace_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "ssl_type", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "ssl_cipher", data type -4, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "x509_issuer", data type -4, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "x509_subject", data type -4, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_questions", data type 4, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_updates", data type 4, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_connections", data type 4, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_user_connections", data type 4, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "plugin", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "authentication_string", data type -1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_expired", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_last_changed", data type 93, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_lifetime", data type 5, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "account_locked", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_role_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Drop_role_priv", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_reuse_history", data type 5, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_reuse_time", data type 5, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_require_current", data type 1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "User_attributes", data type -1, in table "mysql..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "id", data type 4, in table "ttms..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "name", data type 12, in table "ttms..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password", data type 1, in table "ttms..user"
+2019-05-19 22:25:36 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "mailbox", data type 1, in table "ttms..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.logging.LogFactory >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Logging initialized using 'org.mybatis.generator.logging.commons.JakartaCommonsLoggingLogFactory@240237d2' adapter.
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Retrieving column information for table "user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Host", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "User", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Select_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Insert_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Update_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Delete_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Drop_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Reload_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Shutdown_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Process_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "File_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Grant_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "References_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Index_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Alter_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Show_db_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Super_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_tmp_table_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Lock_tables_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Execute_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Repl_slave_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Repl_client_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_view_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Show_view_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_routine_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Alter_routine_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_user_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Event_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Trigger_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_tablespace_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "ssl_type", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "ssl_cipher", data type -4, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "x509_issuer", data type -4, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "x509_subject", data type -4, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_questions", data type 4, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_updates", data type 4, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_connections", data type 4, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "max_user_connections", data type 4, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "plugin", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "authentication_string", data type -1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_expired", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_last_changed", data type 93, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password_lifetime", data type 5, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "account_locked", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Create_role_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Drop_role_priv", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_reuse_history", data type 5, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_reuse_time", data type 5, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "Password_require_current", data type 1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "User_attributes", data type -1, in table "mysql..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "id", data type 4, in table "ttms..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "name", data type 12, in table "ttms..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "password", data type 1, in table "ttms..user"
+2019-05-19 22:29:23 下午 [Thread: main][ Class:org.mybatis.generator.internal.db.DatabaseIntrospector >> Method: org.mybatis.generator.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49) ]
+DEBUG:Found column "mailbox", data type 1, in table "ttms..user"
