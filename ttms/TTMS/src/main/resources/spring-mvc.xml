@@ -19,6 +19,11 @@
     </bean>
     <mvc:default-servlet-handler/>
     <mvc:annotation-driven />
+    <mvc:cors>
+        <mvc:mapping path="/TTMS/**"
+        allowed-origins="http:47.94.92.88:8080"
+        />
+    </mvc:cors>
 
 
 </beans>
