@@ -7,9 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
@@ -22,18 +20,26 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/register")
-    public ModelAndView register(@RequestParam (value = "username") String username,String password,String mailbox,ModelAndView modelAndView)
+    @ResponseBody
+    public Map<String,String> register(@RequestBody User user)
     {
-        userService.register(username,password,mailbox);
-        modelAndView.setViewName("loginForm");
-        return modelAndView;
+        Map<String,String> map =new HashMap<>();
+        if (userService.inquireByUsername(user.getUsername())) {
+            userService.register(user.getUsername(), user.getPassword(), user.getMailbox());
+            map.put("status","200");
+            map.put("message","OK");
+        }else {
+            map.put("message","用户名重复！");
+            map.put("status","500");
+        }
+        return map;
     }
     @PostMapping("/login")
     @ResponseBody
     public Map<String,String> login(@RequestBody User user, HttpSession httpSession)
     {
         Map<String,String> map = new HashMap<>();
-        User getuser = userService.login(user.getName(),user.getPassword());
+        User getuser = userService.login(user.getUsername(),user.getPassword());
         if (getuser!=null){
             httpSession.setAttribute("user",user);
             map.put("status","200");

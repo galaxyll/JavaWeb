@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void register(String username, String password, String mailbox) {
         User user = new User();
-        user.setName(username);
+        user.setUsername(username);
         user.setPassword(password);
         user.setMailbox(mailbox);
         userMapper.addUser(user);
@@ -27,5 +27,12 @@ public class UserServiceImpl implements UserService {
         if (user.getPassword().equals(password))
             return user;
         return null;
+    }
+
+    @Override
+    public boolean inquireByUsername(String username) {
+        if (userMapper.getUserByName(username)!=null)
+            return false;
+        return true;
     }
 }
