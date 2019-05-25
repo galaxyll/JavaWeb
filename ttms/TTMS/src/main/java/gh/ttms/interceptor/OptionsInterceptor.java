@@ -17,6 +17,12 @@ public class OptionsInterceptor implements HandlerInterceptor {
         httpServletResponse.setHeader("Access-Control-Max-Age", "3600");
         httpServletResponse.setHeader("Access-Control-Allow-Headers",
                 "Origin, X-Requested-With, Content-Type, Accept");
+        String method = httpServletRequest.getMethod();
+        if (method.equals("OPTIONS")){
+            httpServletResponse.setStatus(200);
+            return false;
+        }
+        System.out.println(method);
         return true;
     }
 
