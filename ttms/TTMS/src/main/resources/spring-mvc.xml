@@ -22,6 +22,20 @@
     <mvc:cors>
         <mvc:mapping path="/**"/>
     </mvc:cors>
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="gh.ttms.interceptor.OptionsInterceptor">
+                <property name="excludedUrls">
+                    <list>
+                        <value>
+                            /
+                        </value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 
 </beans>
