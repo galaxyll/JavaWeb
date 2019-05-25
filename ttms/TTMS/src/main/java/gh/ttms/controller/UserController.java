@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
@@ -19,7 +20,7 @@ public class UserController {
     @Qualifier("userService")
     private UserService userService;
 
-    @PostMapping("/register")
+    @RequestMapping("/register")
     @ResponseBody
     public Map<String,String> register(@RequestBody User user)
     {
@@ -34,7 +35,7 @@ public class UserController {
         }
         return map;
     }
-    @PostMapping("/login")
+    @RequestMapping("/login")
     @ResponseBody
     public Map<String,String> login(@RequestBody User user, HttpSession httpSession)
     {
