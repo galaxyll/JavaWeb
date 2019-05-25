@@ -19,18 +19,16 @@
     </bean>
     <mvc:default-servlet-handler/>
     <mvc:annotation-driven />
-    <mvc:cors>
-        <mvc:mapping path="/**"/>
-    </mvc:cors>
+    <!--<mvc:cors>-->
+        <!--<mvc:mapping path="/**"/>-->
+    <!--</mvc:cors>-->
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <bean class="gh.ttms.interceptor.OptionsInterceptor">
                 <property name="excludedUrls">
                     <list>
-                        <value>
-                            /
-                        </value>
+                        <value>/</value>
                     </list>
                 </property>
             </bean>
