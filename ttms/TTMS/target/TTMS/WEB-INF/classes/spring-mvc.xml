@@ -17,13 +17,25 @@
         <property name="prefix" value="/WEB-INF/views/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-    <mvc:default-servlet-handler/>
+    <!--<mvc:default-servlet-handler/>-->
     <mvc:annotation-driven />
-    <mvc:cors>
-        <mvc:mapping path="/TTMS/**"
-        allowed-origins="http:47.94.92.88:8080"
-        />
-    </mvc:cors>
+    <!--<mvc:cors>-->
+        <!--<mvc:mapping path="/**"/>-->
+    <!--</mvc:cors>-->
+    <!--<mvc:cors>-->
+        <!--<mvc:mapping path="/*"-->
+        <!--allowed-origins="http://47.94.92.88:8080"-->
+        <!--allow-credentials="true"-->
+        <!--allowed-headers="Accept,Origin,X-Requested-With, Content-Type"-->
+        <!--allowed-methods="*"-->
+        <!--max-age="3600"/>-->
+    <!--</mvc:cors>-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="gh.ttms.interceptor.OptionsInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 
 </beans>

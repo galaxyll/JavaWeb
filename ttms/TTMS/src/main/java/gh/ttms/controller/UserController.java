@@ -5,7 +5,6 @@ import gh.ttms.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -49,6 +48,7 @@ public class UserController {
             map.put("status","500");
             map.put("message","密码或用户名错误，请重新输入！");
         }
+        System.out.println("进入login方法");
         return map;
     }
 }

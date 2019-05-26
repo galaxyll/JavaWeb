@@ -7,8 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
+
 public class OptionsInterceptor implements HandlerInterceptor {
-    private List<String> excludedUrls;
+    //private List<String> excludedUrls;
 
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
@@ -34,11 +35,12 @@ public class OptionsInterceptor implements HandlerInterceptor {
 
     }
 
-    public List<String> getExcludedUrls() {
-        return excludedUrls;
-    }
+//    public List<String> getExcludedUrls() {
+//        return excludedUrls;
+//    }
+//
+//    public void setExcludedUrls(List<String> excludedUrls) {
+//        this.excludedUrls = excludedUrls;
+//    }
 
-    public void setExcludedUrls(List<String> excludedUrls) {
-        this.excludedUrls = excludedUrls;
-    }
 }
