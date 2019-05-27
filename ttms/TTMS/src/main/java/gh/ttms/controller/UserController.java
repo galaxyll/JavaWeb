@@ -1,7 +1,10 @@
 package gh.ttms.controller;
 
 import gh.ttms.pojo.User;
+import gh.ttms.service.MailService;
 import gh.ttms.service.UserService;
+import gh.ttms.service.impl.MailServiceImpl;
+import gh.ttms.util.VerificationCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -9,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,6 +22,10 @@ public class UserController {
     @Autowired
     @Qualifier("userService")
     private UserService userService;
+    @Autowired
+    private MailServiceImpl mailService;
+    @Autowired
+    private VerificationCode verificationCode;
 
     @RequestMapping("/register")
     @ResponseBody
@@ -25,9 +33,15 @@ public class UserController {
     {
         Map<String,String> map =new HashMap<>();
         if (userService.inquireByUsername(user.getUsername())) {
-            userService.register(user.getUsername(), user.getPassword(), user.getMailbox());
+            try {
+                mailService.sendSimpleMail(user.getMailbox(),verificationCode.getCode(6));
+                System.out.println(user.getMailbox());
+            } catch (MessagingException e) {
+                e.printStackTrace();
+            }
             map.put("status","200");
             map.put("message","OK");
+            //userService.register(user.getUsername(), user.getPassword(), user.getMailbox());
         }else {
             map.put("message","用户名重复！");
             map.put("status","500");
