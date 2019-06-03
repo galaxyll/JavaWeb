@@ -3,13 +3,13 @@
 <mapper namespace="gh.ttms.dao.UserMapper">
 
   <insert id="addUser" parameterType="gh.ttms.pojo.User" >
-    insert into "user" (username,password,mailbox,create_date,money,type,note) values (#{username},#{password},#{mailbox},#{createDate},#{money},#{type},#{note});
+    insert into user (username,password,mailbox,create_date,money,type,note) values (#{username},#{password},#{mailbox},#{createDate},#{money},#{type},#{note});
   </insert>
   <delete id="deleteUserByID" parameterType="int" >
-    delete from "user" where id=#{id};
+    delete from user where id=#{id};
   </delete>
   <delete id="deleteUserByName" parameterType="String">
-    delete from "user" where username=#{username};
+    delete from user where username=#{username};
   </delete>
   <select id="getUserByID" parameterType="int" resultType="user">
     select username,password,mailbox from "user" where id=#{id};
@@ -18,6 +18,6 @@
     select username,password,mailbox,create_date as createDate,money,type,note from user where username=#{username};
   </select>
   <update id="updateUser" parameterType="user">
-    update "user" set username=#{username},password=#{password},mailbox=#{mailbox},money=#{money},type=#{type},note=#{note} from "user" where id=#{id};
+    update user set username=#{username},password=#{password},mailbox=#{mailbox},money=#{money},type=#{type},note=#{note} from "user" where id=#{id};
   </update>
 </mapper>

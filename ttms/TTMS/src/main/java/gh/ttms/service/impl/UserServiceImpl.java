@@ -27,8 +27,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean inquireByUsername(String username) {
-        if (userMapper.getUserByName(username)!=null)
+        User user = userMapper.getUserByName(username);
+        if (user!=null){
+            System.out.println(user.getUsername()+user.getMailbox());
             return false;
+        }
         return true;
     }
 }

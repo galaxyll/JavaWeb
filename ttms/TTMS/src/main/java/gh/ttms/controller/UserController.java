@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.mail.MessagingException;
@@ -30,10 +29,10 @@ public class UserController {
 
     @RequestMapping("/checkName")
     @ResponseBody
-    public Map<String,String> checkName(@RequestBody String username)
+    public Map<String,String> checkName(@RequestBody User user)
     {
         Map<String,String> map = new HashMap<>();
-        if (userService.inquireByUsername(username)){
+        if (userService.inquireByUsername(user.getUsername())){
             map.put("status","200");
             map.put("message","OK");
         }else {
@@ -104,6 +103,7 @@ public class UserController {
     @ResponseBody
     public Map<String,String> login(@RequestBody User user, HttpSession httpSession)
     {
+        httpSession.setAttribute("user",user);
         Map<String,String> map = new HashMap<>();
         User getuser = userService.login(user.getUsername(),user.getPassword());
         if (getuser!=null){
