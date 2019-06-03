@@ -13,11 +13,7 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public void register(String username, String password, String mailbox) {
-        User user = new User();
-        user.setUsername(username);
-        user.setPassword(password);
-        user.setMailbox(mailbox);
+    public void register(User user) {
         userMapper.addUser(user);
     }
 

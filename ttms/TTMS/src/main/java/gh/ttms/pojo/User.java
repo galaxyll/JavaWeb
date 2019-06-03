@@ -1,5 +1,7 @@
 package gh.ttms.pojo;
 
+import java.util.Date;
+
 public class User {
     private Integer id;
 
@@ -8,6 +10,14 @@ public class User {
     private String password;
 
     private String mailbox;
+
+    private Date createDate;
+
+    private double money;
+
+    private Integer type;
+
+    private String note;
 
     public Integer getId() {
         return id;
@@ -39,5 +49,37 @@ public class User {
 
     public void setMailbox(String mailbox) {
         this.mailbox = mailbox ;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public double getMoney() {
+        return money;
+    }
+
+    public void setMoney(double money) {
+        this.money = money;
+    }
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
     }
 }

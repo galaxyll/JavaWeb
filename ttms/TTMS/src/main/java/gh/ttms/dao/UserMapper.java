@@ -11,5 +11,4 @@ public interface UserMapper {
     public User getUserByID(int id);
     public User getUserByName(String name);
 
-
 }

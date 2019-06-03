@@ -1114,7 +1114,7 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="280" parent="8" name="user_info">
+    <table id="280" parent="8" name="user">
       <Collation>utf8_general_ci</Collation>
     </table>
     <column id="281" parent="280" name="id">
@@ -1140,17 +1140,40 @@
       <DataType>char(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="285" parent="280" name="username">
+    <column id="285" parent="280" name="create_date">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="286" parent="280" name="money">
+      <Position>6</Position>
+      <DataType>double|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="287" parent="280" name="type">
+      <Position>7</Position>
+      <DataType>tinyint(4)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="288" parent="280" name="note">
+      <Position>8</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <DefaultExpression>&apos;这个人很懒，还没介绍自己&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="289" parent="280" name="username">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="286" parent="280" name="PRIMARY">
+    <key id="290" parent="280" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="287" parent="280" name="username">
+    <key id="291" parent="280" name="username">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>username</UnderlyingIndexName>
     </key>
