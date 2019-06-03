@@ -106,8 +106,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/interceptor/OptionsInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" column="95" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
+            <state relative-caret-position="576">
+              <caret line="16" column="113" lean-forward="true" selection-start-line="16" selection-start-column="113" selection-end-line="16" selection-end-column="113" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -380,7 +380,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559548793135" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559550057517" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -545,12 +545,12 @@
       <workItem from="1558948984241" duration="824000" />
       <workItem from="1559473516086" duration="276000" />
       <workItem from="1559474257781" duration="11531000" />
-      <workItem from="1559538226598" duration="8580000" />
+      <workItem from="1559538226598" duration="9572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161233000" />
+    <option name="totallyTimeSpent" value="162225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="79" y="25" width="1841" height="1055" extended-state="6" />
@@ -566,7 +566,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.26960257" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3426423" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3426423" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.17508055" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1062,8 +1062,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/interceptor/OptionsInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="95" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
+        <state relative-caret-position="576">
+          <caret line="16" column="113" lean-forward="true" selection-start-line="16" selection-start-column="113" selection-end-line="16" selection-end-column="113" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
