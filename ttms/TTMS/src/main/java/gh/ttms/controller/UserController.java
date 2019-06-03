@@ -46,7 +46,7 @@ public class UserController {
     @ResponseBody
     public Map<String,String> checkMail(@RequestBody User user, HttpServletRequest request)
     {
-        HttpSession session = request.getSession();
+        HttpSession session = request.getSession(true);
         session.setAttribute("user",user);
         String code = verificationCode.getCode(6);
         session.setAttribute("code",code);
