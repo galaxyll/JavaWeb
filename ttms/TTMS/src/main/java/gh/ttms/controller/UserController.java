@@ -46,19 +46,21 @@ public class UserController {
     @ResponseBody
     public Map<String,String> checkMail(@RequestBody User user, HttpServletRequest request)
     {
-        HttpSession session = request.getSession(true);
+        HttpSession session = request.getSession();
         session.setAttribute("user",user);
         String code = verificationCode.getCode(6);
         session.setAttribute("code",code);
-        try {
-            mailService.sendSimpleMail(user.getMailbox(),code);
-            System.out.println(user.getMailbox());
-        } catch (MessagingException e) {
-            e.printStackTrace();
-        }
         Map<String,String> map = new HashMap<>();
         map.put("message","验证码已发送，请注意查收");
         map.put("status","200");
+        try {
+            mailService.sendSimpleMail(user.getMailbox(),"验证码："+code);
+            System.out.println(user.getMailbox());
+        } catch (MessagingException e) {
+            map.put("message","验证码发送失败");
+            map.put("status","500");
+            e.printStackTrace();
+        }
         return map;
     }
 
