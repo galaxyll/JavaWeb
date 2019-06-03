@@ -48,13 +48,13 @@ public class UserController {
     {
         HttpSession session = request.getSession();
         session.setAttribute("user",user);
-        String code = verificationCode.getCode(6);
+        String code = "验证码："+verificationCode.getCode(6);
         session.setAttribute("code",code);
         Map<String,String> map = new HashMap<>();
         map.put("message","验证码已发送，请注意查收");
         map.put("status","200");
         try {
-            mailService.sendSimpleMail(user.getMailbox(),"验证码："+code);
+            mailService.sendSimpleMail(user.getMailbox(),code);
             System.out.println(user.getMailbox());
         } catch (MessagingException e) {
             map.put("message","验证码发送失败");
