@@ -59,18 +59,18 @@ public class UserController {
         } catch (MessagingException e) {
             map.put("message","验证码发送失败");
             map.put("status","500");
-            e.printStackTrace();
+            //e.printStackTrace();
         }
         return map;
     }
 
     @RequestMapping("/checkCode")
     @ResponseBody
-    public Map<String,String> checkCode(HttpSession session,@RequestBody String code)
+    public Map<String,String> checkCode(HttpSession session,@RequestBody Map<String,String> argue)
     {
         Map<String,String> map = new HashMap<>();
         String cCode= (String) session.getAttribute("code");
-        if (cCode.equals(code)){
+        if (cCode.equals(argue.get("code"))){
             userService.register((User)session.getAttribute("user"));
             map.put("message","验证成功！请至登录界面登录！");
             map.put("status","200");
