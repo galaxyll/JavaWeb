@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.mail.MessagingException;
@@ -29,7 +30,7 @@ public class UserController {
 
     @RequestMapping("/checkName")
     @ResponseBody
-    public Map<String,String> checkName(String username)
+    public Map<String,String> checkName(@RequestBody String username)
     {
         Map<String,String> map = new HashMap<>();
         if (userService.inquireByUsername(username)){
@@ -64,7 +65,7 @@ public class UserController {
 
     @RequestMapping("/checkCode")
     @ResponseBody
-    public Map<String,String> checkCode(HttpSession session,String code)
+    public Map<String,String> checkCode(HttpSession session,@RequestBody String code)
     {
         Map<String,String> map = new HashMap<>();
         String cCode= (String) session.getAttribute("code");
