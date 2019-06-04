@@ -1114,66 +1114,125 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="280" parent="8" name="user">
+    <table id="280" parent="8" name="movie"/>
+    <table id="281" parent="8" name="user">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <column id="281" parent="280" name="id">
+    <column id="282" parent="280" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="280" name="username">
+    <column id="283" parent="280" name="moviename">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="283" parent="280" name="password">
-      <Position>3</Position>
-      <DataType>char(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="280" name="mailbox">
+    <column id="284" parent="280" name="photo">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="285" parent="280" name="type">
       <Position>4</Position>
-      <DataType>char(20)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;暂无分类&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="280" name="create_date">
+    <column id="286" parent="280" name="duration">
       <Position>5</Position>
-      <DataType>datetime|0s</DataType>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="280" name="money">
+    <column id="287" parent="280" name="price">
       <Position>6</Position>
       <DataType>double|0s</DataType>
+      <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="280" name="type">
+    <column id="288" parent="280" name="introduction">
       <Position>7</Position>
-      <DataType>tinyint(4)|0s</DataType>
-      <DefaultExpression>0</DefaultExpression>
+      <DataType>varchar(200)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;暂无简介。&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="280" name="note">
+    <column id="289" parent="280" name="release_date">
       <Position>8</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <DefaultExpression>&apos;这个人很懒，还没介绍自己&apos;</DefaultExpression>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;2020-12-31&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="289" parent="280" name="username">
-      <ColNames>username</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
     <key id="290" parent="280" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="291" parent="280" name="username">
+    <column id="291" parent="281" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="292" parent="281" name="username">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="293" parent="281" name="password">
+      <Position>3</Position>
+      <DataType>char(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="294" parent="281" name="mailbox">
+      <Position>4</Position>
+      <DataType>char(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="295" parent="281" name="create_date">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="296" parent="281" name="money">
+      <Position>6</Position>
+      <DataType>double|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="297" parent="281" name="type">
+      <Position>7</Position>
+      <DataType>tinyint(4)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="298" parent="281" name="note">
+      <Position>8</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <DefaultExpression>&apos;这个人很懒，还没介绍自己&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="299" parent="281" name="username">
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="300" parent="281" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="301" parent="281" name="username">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>username</UnderlyingIndexName>
     </key>
