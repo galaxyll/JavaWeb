@@ -3,7 +3,7 @@
 <mapper namespace="gh.ttms.dao.UserMapper">
 
   <insert id="addUser" parameterType="gh.ttms.pojo.User" >
-    insert into user (username,password,mailbox,create_date,money,type,note) values (#{username},#{password},#{mailbox},#{createDate},#{money},#{type},#{note});
+    insert into user (username,password,mailbox) values (#{username},#{password},#{mailbox});
   </insert>
   <delete id="deleteUserByID" parameterType="int" >
     delete from user where id=#{id};
