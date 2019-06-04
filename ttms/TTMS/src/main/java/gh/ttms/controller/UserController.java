@@ -49,15 +49,16 @@ public class UserController {
     {
         Date date = new Date();
         System.out.println(date.toString());
-        HttpSession session = request.getSession();
+        //HttpSession session = request.getSession();
         System.out.println(date.toString());
-        session.setAttribute("user",user);
+        //session.setAttribute("user",user);
         System.out.println(date.toString());
         String code = "验证码："+verificationCode.getCode(6);
         System.out.println(date.toString());
-        session.setAttribute("code",code);
+        //session.setAttribute("code",code);
         System.out.println(date.toString());
         Map<String,String> map = new HashMap<>();
+        map.put("code",code);
         map.put("message","验证码已发送，请注意查收");
         map.put("status","200");
         try {
@@ -73,27 +74,31 @@ public class UserController {
         return map;
     }
 
-    @RequestMapping("/checkCode")
-    @ResponseBody
-    public Map<String,String> checkCode(HttpSession session,@RequestBody Map<String,String> argue)
-    {
-        Map<String,String> map = new HashMap<>();
-        String cCode= (String) session.getAttribute("code");
-        if (cCode.equals(argue.get("code"))){
-            userService.register((User)session.getAttribute("user"));
-            map.put("message","验证成功！请至登录界面登录！");
-            map.put("status","200");
-        }else {
-            map.put("message","验证码错误，请重试！");
-            map.put("status","500");
-        }
-        return map;
-    }
-
-//    @RequestMapping("/register")
+//    @RequestMapping("/checkCode")
 //    @ResponseBody
-//    public Map<String,String> register(@RequestBody User user)
+//    public Map<String,String> checkCode(HttpSession session,@RequestBody Map<String,String> argue)
 //    {
+//        Map<String,String> map = new HashMap<>();
+//        String cCode= (String) session.getAttribute("code");
+//        if (cCode.equals(argue.get("code"))){
+//            userService.register((User)session.getAttribute("user"));
+//            map.put("message","验证成功！请至登录界面登录！");
+//            map.put("status","200");
+//        }else {
+//            map.put("message","验证码错误，请重试！");
+//            map.put("status","500");
+//        }
+//        return map;
+//    }
+
+    @RequestMapping("/register")
+    @ResponseBody
+    public Map<String,String> register(@RequestBody User user)
+    {
+        Map<String,String> respMap =new HashMap<>();
+        userService.register(user);
+        respMap.put("message","注册成功！");
+        respMap.put("status","200");
 //        Map<String,String> map =new HashMap<>();
 //        if (userService.inquireByUsername(user.getUsername())) {
 //            try {
@@ -109,7 +114,8 @@ public class UserController {
 //            map.put("status","500");
 //        }
 //        return map;
-//    }
+        return respMap;
+    }
     @RequestMapping("/login")
     @ResponseBody
     public Map<String,String> login(@RequestBody User user, HttpSession httpSession)
