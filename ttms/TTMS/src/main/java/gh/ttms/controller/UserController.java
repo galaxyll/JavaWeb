@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -46,20 +47,28 @@ public class UserController {
     @ResponseBody
     public Map<String,String> checkMail(@RequestBody User user, HttpServletRequest request)
     {
+        Date date = new Date();
+        System.out.println(date.toString());
         HttpSession session = request.getSession();
+        System.out.println(date.toString());
         session.setAttribute("user",user);
+        System.out.println(date.toString());
         String code = "验证码："+verificationCode.getCode(6);
+        System.out.println(date.toString());
         session.setAttribute("code",code);
+        System.out.println(date.toString());
         Map<String,String> map = new HashMap<>();
         map.put("message","验证码已发送，请注意查收");
         map.put("status","200");
         try {
+            System.out.println("发送前："+date.toString());
             mailService.sendSimpleMail(user.getMailbox(),code);
+            System.out.println("发送后："+date.toString());
             System.out.println(user.getMailbox());
         } catch (MessagingException e) {
             map.put("message","验证码发送失败");
             map.put("status","500");
-            //e.printStackTrace();
+            e.printStackTrace();
         }
         return map;
     }
