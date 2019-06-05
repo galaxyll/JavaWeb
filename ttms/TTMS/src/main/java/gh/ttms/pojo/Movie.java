@@ -10,6 +10,8 @@ public class Movie {
     private Double price;
     private String introduction;
     private Date releaseDate;
+    private Float score;
+    private String author;
 
     public Movie() {
     }
@@ -70,5 +72,21 @@ public class Movie {
 
     public void setDuration(Integer duration) {
         this.duration = duration;
+    }
+
+    public Float getScore() {
+        return score;
+    }
+
+    public void setScore(Float score) {
+        this.score = score;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 }
