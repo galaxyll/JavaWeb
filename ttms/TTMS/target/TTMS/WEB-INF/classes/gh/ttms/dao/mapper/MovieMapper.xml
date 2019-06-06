@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="gh.ttms.dao.UserMapper">
+<mapper namespace="gh.ttms.dao.MovieMapper">
     <insert id="addMovie" parameterType="Movie">
-        insert into movie(moviename, photo, type, duration, price, introduction, release_date) values (#{moviename},#{photo},#{type},#{duration},#{price},#{introduction},#{release_date});
+        insert into movie(moviename, photo, type, duration, introduction, release_date,score,author,production) values (#{moviename},#{photo},#{type},#{duration},#{introduction},#{release_date},#{score},#{author});
     </insert>
     <select id="getMovieByName" parameterType="String" resultType="Movie">
-        select moviename, photo, type, duration, price, introduction, release_date from movie where moviename=#{moviename};
+        select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production from movie where moviename=#{moviename};
     </select>
+    <!--<insert id="addPhoto" parameterType="String">-->
+        <!--insert into movie(photo) values (#{photo}) where moviename=#{moviename};-->
+    <!--</insert>-->
 </mapper>
