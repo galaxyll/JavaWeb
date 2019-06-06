@@ -11,3 +11,5 @@ create table movie(
   score float(1) default 0,
   author char(20) default "暂无作者" not null
 );
+
+alter table movie add column  production varchar(200);

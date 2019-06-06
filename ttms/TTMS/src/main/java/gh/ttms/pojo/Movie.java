@@ -11,6 +11,7 @@ public class Movie {
     private Date releaseDate;
     private Float score;
     private String author;
+    private String production;
 
     public Movie() {
     }
@@ -78,5 +79,13 @@ public class Movie {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public String getProduction() {
+        return production;
+    }
+
+    public void setProduction(String production) {
+        this.production = production;
     }
 }
