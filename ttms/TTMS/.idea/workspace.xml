@@ -105,7 +105,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/MovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="7">
               <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -434,7 +434,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559804990563" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559805462460" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -604,12 +604,12 @@
       <workItem from="1559574775040" duration="1262000" />
       <workItem from="1559616887042" duration="16721000" />
       <workItem from="1559698119083" duration="16831000" />
-      <workItem from="1559787511166" duration="9258000" />
+      <workItem from="1559787511166" duration="9598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219158000" />
+    <option name="totallyTimeSpent" value="219498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -625,14 +625,14 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.26852846" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22556391" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45112783" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.17508055" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32867885" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32939914" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22234157" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.85606873" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.22878624" />
@@ -1213,7 +1213,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="7">
           <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
