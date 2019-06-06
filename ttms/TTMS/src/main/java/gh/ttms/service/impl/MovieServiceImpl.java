@@ -6,7 +6,7 @@ import gh.ttms.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("movieService")
 public class MovieServiceImpl implements MovieService {
 
     @Autowired
