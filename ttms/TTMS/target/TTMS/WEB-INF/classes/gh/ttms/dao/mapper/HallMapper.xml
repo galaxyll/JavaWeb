@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gh.ttms.dao.HallMapper">
+    <insert id="addHall" parameterType="gh.ttms.pojo.Hall">
+        insert into hall(hallname, type, hall_row, hall_column, seat_total,status) values (#{hallname},#{type},#{hallRow},#{hallColumn},#{seatTotal},#{status});
+    </insert>
+    <select id="getHall" parameterType="int" resultType="gh.ttms.pojo.Hall">
+        select * from hall where hall_id=#{hallID};
+    </select>
+</mapper>
