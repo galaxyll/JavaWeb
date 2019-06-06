@@ -9,15 +9,7 @@
     <bookmark url="file://$PROJECT_DIR$/src" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3314623-ead2-40c9-aa96-3c1b1f261341" name="Default Changelist" comment="完善了注册部分的代码">
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/MovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/impl/MovieServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/impl/MovieServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/service/impl/MovieServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/service/impl/MovieServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c3314623-ead2-40c9-aa96-3c1b1f261341" name="Default Changelist" comment="完善了注册部分的代码" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -148,7 +140,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/UserMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
@@ -159,8 +151,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1006">
-              <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
+            <state relative-caret-position="127">
+              <caret line="36" column="8" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="89" />
               <folding>
                 <element signature="e#1364#1381#0" expanded="true" />
                 <element signature="e#1427#1448#0" expanded="true" />
@@ -172,7 +164,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/MovieMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/MovieMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -349,14 +341,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TTMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TTMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -422,11 +406,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/gh/ttms/util" />
       <recent name="$PROJECT_DIR$/src/main/resources/sql" />
       <recent name="$PROJECT_DIR$/src/main/java/gh/ttms/dao" />
       <recent name="$PROJECT_DIR$/src/main/resources/spring" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -580,17 +564,17 @@
       <workItem from="1559616887042" duration="16721000" />
       <workItem from="1559698119083" duration="16831000" />
       <workItem from="1559787511166" duration="13067000" />
-      <workItem from="1559808888369" duration="324000" />
+      <workItem from="1559808888369" duration="556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223291000" />
+    <option name="totallyTimeSpent" value="223523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19160685" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19160685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -601,14 +585,14 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.26852846" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23952739" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5424275" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.17508055" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32867885" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32939914" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.23845327" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23845327" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.22878624" />
@@ -878,7 +862,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/HallMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/HallMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
@@ -1080,7 +1064,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/SeatMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SeatMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
@@ -1161,14 +1145,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/UserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/MovieMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/MovieMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -1177,8 +1161,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1006">
-          <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
+        <state relative-caret-position="127">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="89" />
           <folding>
             <element signature="e#1364#1381#0" expanded="true" />
             <element signature="e#1427#1448#0" expanded="true" />
