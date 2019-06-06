@@ -7,7 +7,4 @@
     <select id="getMovieByName" parameterType="String" resultType="gh.ttms.pojo.Movie">
         select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production from movie where moviename=#{moviename};
     </select>
-    <!--<insert id="addPhoto" parameterType="String">-->
-        <!--insert into movie(photo) values (#{photo}) where moviename=#{moviename};-->
-    <!--</insert>-->
 </mapper>
