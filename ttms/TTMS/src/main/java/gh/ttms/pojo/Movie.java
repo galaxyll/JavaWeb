@@ -7,7 +7,6 @@ public class Movie {
     private String photo;
     private String type;
     private Integer duration;
-    private Double price;
     private String introduction;
     private Date releaseDate;
     private Float score;
@@ -40,15 +39,6 @@ public class Movie {
         this.type = type;
     }
 
-
-
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
-    }
 
     public String getIntroduction() {
         return introduction;

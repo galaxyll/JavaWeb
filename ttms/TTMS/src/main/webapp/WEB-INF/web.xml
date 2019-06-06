@@ -3,7 +3,8 @@
 <web-app version="3.0"
         xmlns="http://java.sun.com/xml/ns/javaee"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+        http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
 <display-name>Archetype Created Web Application</display-name>
 
@@ -59,6 +60,13 @@
       <param-value>classpath:spring/spring-mvc.xml</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
+    <multipart-config>
+      <!--文件保存路径-->
+      <location>/home/galaxy/ttms/</location>
+      <max-file-size>10240</max-file-size>
+      <max-request-size>10240</max-request-size>
+      <file-size-threshold>0</file-size-threshold>
+    </multipart-config>
   </servlet>
   <!--前端控制器的映射规则-->
   <servlet-mapping>
