@@ -40,28 +40,28 @@ public class MovieController {
     {
         Map<String,String> map = new HashMap<>();
         //String filename = file.getOriginalFilename();
-        String movieName = "";
-        Cookie[] cookies = request.getCookies();
-        for (Cookie cookie:cookies){
-            if (cookie.getName().equals("noneImg")){
-                movieName  = (String) cookie.getValue();
-                map.put("message",movieName);
-            }
-        }
-        map.put("message","没找到");
-        return map;
-//        File dest = new File(filename);
-//        try {
-//            file.transferTo(dest);
-//            movieService.addPhoto(movieName,"/home/admin/galaxy/ttms/"+filename);
-//            map.put("status","200");
-//            map.put("message","OK");
-//        } catch (IllegalStateException | IOException e){
-//            map.put("status","500");
-//            map.put("message","上传文件失败！");
-//            e.printStackTrace();
+        String movieName = (String) request.getAttribute("noneImg");
+//        Cookie[] cookies = request.getCookies();
+//        for (Cookie cookie:cookies){
+//            if (cookie.getName().equals("noneImg")){
+//                movieName  = (String) cookie.getValue();
+//                map.put("message",movieName);
+//            }
 //        }
+//        map.put("message","没找到");
 //        return map;
+        File dest = new File(movieName);
+        try {
+            file.transferTo(dest);
+            movieService.addPhoto(movieName,"/home/admin/galaxy/ttms/"+movieName);
+            map.put("status","200");
+            map.put("message","OK");
+        } catch (IllegalStateException | IOException e){
+            map.put("status","500");
+            map.put("message","上传文件失败！");
+            e.printStackTrace();
+        }
+        return map;
     }
 
     @ResponseBody
