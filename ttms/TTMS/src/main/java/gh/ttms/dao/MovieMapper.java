@@ -2,6 +2,8 @@ package gh.ttms.dao;
 
 import gh.ttms.pojo.Movie;
 
+import java.util.List;
+
 public interface MovieMapper {
     public void addMovie(Movie movie);
 
@@ -10,4 +12,5 @@ public interface MovieMapper {
 
     public Movie getMovieByName(String moviename);
 
+    public List<Movie> getMovieList();
 }

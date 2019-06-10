@@ -6,6 +6,8 @@ import gh.ttms.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service("movieService")
 public class MovieServiceImpl implements MovieService {
 
@@ -23,7 +25,7 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
-    public Movie getMovie() {
-        return null;
+    public List<Movie> getMovieList() {
+        return movieMapper.getMovieList();
     }
 }

@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -59,5 +60,13 @@ public class MovieController {
             e.printStackTrace();
         }
         return map;
+    }
+
+    @ResponseBody
+    @RequestMapping("/getMovieList")
+    public List<Movie> getMovieList()
+    {
+        List<Movie> movies = movieService.getMovieList();
+        return movies;
     }
 }

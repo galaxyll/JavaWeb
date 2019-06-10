@@ -8,4 +8,8 @@
     <select id="getMovieByName" parameterType="String" resultType="gh.ttms.pojo.Movie">
         select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production from movie where moviename=#{moviename};
     </select>
+
+    <select id="getMovieList" resultType="gh.ttms.pojo.Movie">
+        select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production from movie;
+    </select>
 </mapper>
