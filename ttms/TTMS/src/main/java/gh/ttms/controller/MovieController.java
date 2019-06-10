@@ -39,7 +39,7 @@ public class MovieController {
     public Map<String,String> addPhoto(MultipartFile file,HttpServletRequest request)
     {
         Map<String,String> map = new HashMap<>();
-        String filename = file.getOriginalFilename();
+        //String filename = file.getOriginalFilename();
         String movieName = "";
         Cookie[] cookies = request.getCookies();
         for (Cookie cookie:cookies){
