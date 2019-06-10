@@ -45,21 +45,23 @@ public class MovieController {
         for (Cookie cookie:cookies){
             if (cookie.getName().equals("noneImg")){
                 movieName  = (String) cookie.getValue();
-                System.out.println(movieName);
+                map.put("message",movieName);
             }
         }
-        File dest = new File(filename);
-        try {
-            file.transferTo(dest);
-            movieService.addPhoto(movieName,"/home/admin/galaxy/ttms/"+filename);
-            map.put("status","200");
-            map.put("message","OK");
-        } catch (IllegalStateException | IOException e){
-            map.put("status","500");
-            map.put("message","上传文件失败！");
-            e.printStackTrace();
-        }
+        map.put("message","没找到");
         return map;
+//        File dest = new File(filename);
+//        try {
+//            file.transferTo(dest);
+//            movieService.addPhoto(movieName,"/home/admin/galaxy/ttms/"+filename);
+//            map.put("status","200");
+//            map.put("message","OK");
+//        } catch (IllegalStateException | IOException e){
+//            map.put("status","500");
+//            map.put("message","上传文件失败！");
+//            e.printStackTrace();
+//        }
+//        return map;
     }
 
     @ResponseBody
