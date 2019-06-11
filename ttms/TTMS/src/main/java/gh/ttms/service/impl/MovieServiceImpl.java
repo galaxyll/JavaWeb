@@ -21,11 +21,30 @@ public class MovieServiceImpl implements MovieService {
 
     @Override
     public void addPhoto(String moviename,String photo) {
-        movieMapper.addPhoto(moviename,photo);
+        Movie movie = new Movie();
+        movie.setMoviename(moviename);
+        movie.setPhoto(photo);
+        movieMapper.addPhoto(movie);
     }
 
     @Override
     public List<Movie> getMovieList() {
         return movieMapper.getMovieList();
     }
+
+    @Override
+    public int getID(String moviename) {
+        return movieMapper.getIDByName(moviename);
+    }
+
+    @Override
+    public Movie getMovieByName(String moviename) {
+        Movie movie = movieMapper.getMovieByName(moviename);
+        if (movie==null){
+            System.out.println("movie==null");
+        }
+        return movie;
+    }
+
+
 }

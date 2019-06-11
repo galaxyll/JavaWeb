@@ -62,5 +62,6 @@
             <!--<tx:method name="get*" read-only="true"/>-->
         <!--</tx:attributes>-->
     <!--</tx:advice>-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
     <import resource="spring-mail.xml" />
 </beans>

@@ -8,4 +8,6 @@ public interface MovieService {
     public void addMovie(Movie movie);
     public void addPhoto(String moviename,String photo);
     public List<Movie> getMovieList();
+    public int getID(String moviename);
+    public Movie getMovieByName(String moviename);
 }

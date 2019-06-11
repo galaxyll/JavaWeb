@@ -12,12 +12,12 @@
     delete from user where username=#{username};
   </delete>
   <select id="getUserByID" parameterType="int" resultType="user">
-    select username,password,mailbox from "user" where id=#{id};
+    select username,password,mailbox from user where id=#{id};
   </select>
   <select id="getUserByName" parameterType="String" resultType="user">
     select username,password,mailbox,create_date as createDate,money,type,note from user where username=#{username};
   </select>
   <update id="updateUser" parameterType="user">
-    update user set username=#{username},password=#{password},mailbox=#{mailbox},money=#{money},type=#{type},note=#{note} from "user" where id=#{id};
+    update user set username=#{username},password=#{password},mailbox=#{mailbox},money=#{money},type=#{type},note=#{note} from user where id=#{id};
   </update>
 </mapper>

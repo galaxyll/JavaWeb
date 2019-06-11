@@ -4,14 +4,15 @@ import gh.ttms.pojo.Movie;
 import gh.ttms.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
-import javax.servlet.http.Cookie;
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -36,11 +37,19 @@ public class MovieController {
 
     @RequestMapping("/addMovieOnlyPhoto")
     @ResponseBody
-    public Map<String,String> addPhoto(MultipartFile file,HttpServletRequest request)
+    public Map<String,String> addPhoto(HttpServletRequest request)
     {
         Map<String,String> map = new HashMap<>();
-        //String filename = file.getOriginalFilename();
-        String movieName = (String) request.getAttribute("noneImg");
+        System.out.println(request.getParameter("noneImg"));
+        if (request instanceof MultipartHttpServletRequest) {
+            System.out.println("是multipart请求");
+            MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
+            MultipartFile file = multipartRequest.getFile("file");
+
+            //String filename = file.getOriginalFilename();
+            String movieName = (String)multipartRequest.getParameter("noneImg");
+            System.out.println("moviename" + movieName);
+            String imgName = String.valueOf(movieService.getID(movieName));
 //        Cookie[] cookies = request.getCookies();
 //        for (Cookie cookie:cookies){
 //            if (cookie.getName().equals("noneImg")){
@@ -50,17 +59,22 @@ public class MovieController {
 //        }
 //        map.put("message","没找到");
 //        return map;
-        File dest = new File(movieName);
-        try {
-            file.transferTo(dest);
-            movieService.addPhoto(movieName,"/home/admin/galaxy/ttms/"+movieName);
-            map.put("status","200");
-            map.put("message","OK");
-        } catch (IllegalStateException | IOException e){
-            map.put("status","500");
-            map.put("message","上传文件失败！");
-            e.printStackTrace();
+            File dest = new File(imgName);
+            try {
+                file.transferTo(dest);
+                movieService.addPhoto(movieName, "http://192.168.43.133:8080/TTMS/img/" + imgName);
+                map.put("status", "200");
+                map.put("message", "OK");
+            } catch (IllegalStateException | IOException e) {
+                map.put("status", "500");
+                map.put("message", "上传文件失败！");
+                e.printStackTrace();
+            }
         }
+        else {
+            System.out.println("不是multpart请求");
+        }
+
         return map;
     }
 
@@ -70,5 +84,26 @@ public class MovieController {
     {
         List<Movie> movies = movieService.getMovieList();
         return movies;
+    }
+
+    @RequestMapping("/img/{imgName}")
+    public void getImg(@PathVariable("imgName") String imgName, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        ServletOutputStream img = response.getOutputStream();
+        String imgPath = "/home/galaxy/GitRepos/JavaWeb/ttms/TTMS/src/main/resources/img/"+imgName;
+        FileInputStream fileInputStream = new FileInputStream(imgPath);
+        int len = 0;
+        byte[] buffer = new byte[1024];
+        while ((len = fileInputStream.read(buffer))>0){
+            img.write(buffer,0,len);
+        }
+        fileInputStream.close();
+        img.close();
+    }
+
+    @ResponseBody
+    @RequestMapping("/getMovieByName")
+    public Movie getMovieByName(@RequestBody Map<String,String> movie)
+    {
+        return movieService.getMovieByName(movie.get("moviename"));
     }
 }

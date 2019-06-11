@@ -5,11 +5,19 @@
 <insert id="addMovie" parameterType="gh.ttms.pojo.Movie">
         insert into movie(moviename,type, duration, introduction, release_date,author,production) values (#{moviename},#{type},#{duration},#{introduction},#{releaseDate},#{author},#{production});
     </insert>
-    <select id="getMovieByName" parameterType="String" resultType="gh.ttms.pojo.Movie">
+    <select id="getMovieByName"  resultType="gh.ttms.pojo.Movie">
         select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production from movie where moviename=#{moviename};
     </select>
 
     <select id="getMovieList" resultType="gh.ttms.pojo.Movie">
         select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production from movie;
+    </select>
+
+    <insert id="addPhoto" parameterType="gh.ttms.pojo.Movie">
+        update movie set photo=#{photo} where moviename=#{moviename};
+    </insert>
+
+    <select id="getIDByName" parameterType="String" resultType="int">
+        select id from movie where moviename=#{moviename}
     </select>
 </mapper>
