@@ -1,6 +1,8 @@
 package gh.ttms.controller;
 
+import gh.ttms.pojo.Movie;
 import gh.ttms.pojo.Plan;
+import gh.ttms.pojo.param.DateAndName;
 import gh.ttms.service.MovieService;
 import gh.ttms.service.PlanService;
 import gh.ttms.service.SeatService;
@@ -10,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @Controller
 public class PlanController {
@@ -43,5 +43,27 @@ public class PlanController {
             map.put("message","OK");
         }
         return map;
+    }
+
+    @RequestMapping("/getDateByName")
+    @ResponseBody
+    public Set<Date> getShowDateByName(@RequestBody Map<String,String> param)
+    {
+        return planService.getShowDateByName(param.get("moviename"));
+    }
+
+    @ResponseBody
+    @RequestMapping("/getNewMovie")
+    public List<Movie> getNewMovie()
+    {
+        return planService.getNewMovie();
+    }
+
+    @ResponseBody
+    @RequestMapping("/getMoviePlanByDate")
+    public List<Plan> getMoviePlan(@RequestBody DateAndName param)
+    {
+
+        return planService.getMoviePlanByDate(param);
     }
 }

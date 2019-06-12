@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gh.ttms.dao.PlanMapper">
+    <insert id="addPlan" parameterType="gh.ttms.pojo.Plan">
+        insert into plan(moviename, hall_id, play_date, ticket_price, end_date) VALUES (#{moviename},#{hallID},#{playDate},#{ticketPrice},#{endDate});
+    </insert>
+    <select id="getHallLastDate" parameterType="int" resultType="java.util.Date">
+        select MAX(end_date) from plan where hall_id=#{hallID};
+    </select>
+    <select id="getShowDateByName" resultType="java.util.Date">
+        select play_date as playDate from plan where moviename=#{moviename};
+    </select>
+    <select id="getNewMovienameList" resultType="String">
+        select distinct moviename from plan where  (to_days(now()) &lt; (to_days(play_date)+2) and play_date &lt; now());
+    </select>
+    <select id="getMoviePlanByDate" parameterType="gh.ttms.pojo.param.DateAndName" resultType="gh.ttms.pojo.Plan">
+        select moviename,hall_id as hallID,play_date as playDate,ticket_price as ticketPrice,end_date as endDate from plan where moviename=#{name} and to_days(play_date)=to_days(#{showDate})+1 ;
+    </select>
+    <!--<select id="getMoviePlanByDate" parameterType="gh.ttms.pojo.param.DateAndName" resultType="gh.ttms.pojo.param.Longlong">-->
+        <!--select to_days(play_date) as playDate,to_days(#{showDate}) as param from plan where moviename=#{name} ;-->
+    <!--</select>-->
+</mapper>
