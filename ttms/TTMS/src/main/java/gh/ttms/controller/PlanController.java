@@ -1,9 +1,9 @@
 package gh.ttms.controller;
 
 import gh.ttms.pojo.Plan;
-import gh.ttms.pojo.Seat;
 import gh.ttms.service.MovieService;
 import gh.ttms.service.PlanService;
+import gh.ttms.service.SeatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,6 +21,8 @@ public class PlanController {
     private PlanService planService;
     @Autowired
     private MovieService movieService;
+    @Autowired
+    private SeatService seatService;
 
     @RequestMapping("/addPlan")
     @ResponseBody
@@ -36,6 +38,7 @@ public class PlanController {
             Date endDate = new Date(plan.getPlayDate().getTime()+((movieService.getMovieByName(plan.getMoviename()).getDuration())*1000*60));
             plan.setEndDate(endDate);
             planService.addPlan(plan);
+            seatService.initSeat(plan);
             map.put("status","200");
             map.put("message","OK");
         }

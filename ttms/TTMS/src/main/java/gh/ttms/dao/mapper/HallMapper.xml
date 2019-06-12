@@ -4,13 +4,16 @@
     <insert id="addHall" parameterType="gh.ttms.pojo.Hall">
         insert into hall(hallname, type, hall_row, hall_column) values (#{hallname},#{type},#{hallRow},#{hallColumn});
     </insert>
-    <select id="getHall" parameterType="String" resultType="gh.ttms.pojo.Hall">
-        select * from hall where hallname=#{hallname};
+    <select id="getHall" parameterType="int" resultType="gh.ttms.pojo.Hall">
+        select hall_id as hallID,hallname,type,hall_row as hallRow,hall_column as hallColumn,status from hall where hall_id=#{hallID};
     </select>
     <select id="getHallID" parameterType="String" resultType="int">
         select hall_id from hall where hallname=#{hallname};
     </select>
     <select id="getHallList" resultType="gh.ttms.pojo.Hall">
         select hall_id as hallID,hallname,type,hall_row as hallRow,hall_column as hallColumn,status from hall;
+    </select>
+    <select id="getHallByID" resultType="gh.ttms.pojo.Hall">
+        select * from hall where hall_id=#{hallID};
     </select>
 </mapper>
