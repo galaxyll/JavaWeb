@@ -1,7 +1,7 @@
 package gh.ttms.pojo;
 
 public class Hall {
-    private String hallID;
+    private Integer hallID;
     private String hallname;
     private String type;
     private Integer hallRow;
@@ -49,11 +49,11 @@ public class Hall {
     }
 
 
-    public String getHallID() {
+    public Integer getHallID() {
         return hallID;
     }
 
-    public void setHallID(String hallID) {
+    public void setHallID(Integer hallID) {
         this.hallID = hallID;
     }
 }

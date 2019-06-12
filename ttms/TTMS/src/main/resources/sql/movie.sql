@@ -10,5 +10,7 @@ create table movie(
   release_date date default "2020-12-31" not null,
   score float(1) default 0,
   author varchar(100) default "暂无作者" not null,
-  production varchar(400)
+  production varchar(400),
+  status int default 0 not null,
+  quantity int default 0 not null
 );

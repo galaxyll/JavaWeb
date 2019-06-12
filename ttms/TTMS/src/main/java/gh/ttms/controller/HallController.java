@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -26,5 +27,11 @@ public class HallController {
         map.put("status","200");
         map.put("message","OjbK");
         return map;
+    }
+    @ResponseBody
+    @RequestMapping("/getHallList")
+    public List<Hall> getHallList()
+    {
+        return hallService.getHallList();
     }
 }

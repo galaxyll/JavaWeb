@@ -126,6 +126,14 @@ public class MovieController {
         return movieService.getMovieNameNotShow();
     }
 
+    @ResponseBody
+    @RequestMapping("/getMovieNameListHadShow")
+    public List<String> getMovieNameHadShow()
+    {
+        return movieService.getMovieNameHadShow();
+    }
+
+
     @RequestMapping("/takeMovieON")
     @ResponseBody
     public Map<String,String> alterMovieStatus(@RequestBody Map<String,String> map)

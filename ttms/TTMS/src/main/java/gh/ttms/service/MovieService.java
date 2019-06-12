@@ -12,6 +12,7 @@ public interface MovieService {
     public Movie getMovieByName(String moviename);
     public void alterMovie(Movie movie);
     public List<String> getMovieNameNotShow();
+    public List<String> getMovieNameHadShow();
     public void takeMovieON(String moviename);
     public void takeMovieDown(String moviename);
 }

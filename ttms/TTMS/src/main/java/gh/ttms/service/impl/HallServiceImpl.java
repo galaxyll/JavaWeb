@@ -6,6 +6,8 @@ import gh.ttms.service.HallService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class HallServiceImpl implements HallService {
 
@@ -15,5 +17,20 @@ public class HallServiceImpl implements HallService {
     @Override
     public void addHall(Hall hall) {
         hallMapper.addHall(hall);
+    }
+
+    @Override
+    public Hall getHallByID(Integer id) {
+        return hallMapper.getHall(id);
+    }
+
+    @Override
+    public int getHallID(String hallname) {
+        return hallMapper.getHallID(hallname);
+    }
+
+    @Override
+    public List<Hall> getHallList() {
+        return hallMapper.getHallList();
     }
 }

@@ -4,5 +4,7 @@
     <insert id="addSeat" parameterType="gh.ttms.pojo.Seat">
         insert into seat(seat_id, seat_row, seat_column, status, use_date) VALUES (#{seatID},#{seatRow},#{seatColumn},#{status},#{useDate});
     </insert>
-    <!--<select id="getSeat" parameterType="" resultType=""></select>-->
+    <select id="getSeatStatus" parameterType="gh.ttms.pojo.param.InquireSeatStatusPojo" resultType="int">
+        select status from seat where seat_id=#{hallID} and seat_row=#{seatRow} and seat_column=#{seatCol} and use_date=#{showDate};
+    </select>
 </mapper>

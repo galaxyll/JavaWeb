@@ -53,6 +53,10 @@
          select moviename from movie where status=0;
     </select>
 
+    <select id="getMovieNameHadShow" resultType="String">
+         select moviename from movie where status=1;
+    </select>
+
     <update id="updateMovieStatus" parameterType="String">
         update movie set status=1 where moviename=#{moviename};
     </update>

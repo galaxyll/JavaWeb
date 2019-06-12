@@ -1,11 +1,12 @@
 package gh.ttms.dao;
 
 import gh.ttms.pojo.Seat;
+import gh.ttms.pojo.param.InquireSeatStatusPojo;
 
 import java.util.Date;
 
 public interface SeatMapper {
     public void addSeat(Seat seat);
-    public Seat getSeat();
+    public Integer getSeatStatus(InquireSeatStatusPojo param);
     public void delSeat(Date date);
 }

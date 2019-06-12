@@ -1,11 +1,15 @@
 package gh.ttms.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class Plan {
     private String moviename;
     private Integer hallID;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date playDate;
+    private Date endDate;
     private Double ticketPrice;
 
     public String getMoviename() {
@@ -38,5 +42,13 @@ public class Plan {
 
     public void setTicketPrice(Double ticketPrice) {
         this.ticketPrice = ticketPrice;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
     }
 }

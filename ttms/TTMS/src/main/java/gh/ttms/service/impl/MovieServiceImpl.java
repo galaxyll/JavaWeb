@@ -55,6 +55,12 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
+    public List<String> getMovieNameHadShow() {
+        List<String> movieList = movieMapper.getMovieNameHadShow();
+        return movieList;
+    }
+
+    @Override
     public void takeMovieON(String moviename) {
         movieMapper.updateMovieStatus(moviename);
     }
