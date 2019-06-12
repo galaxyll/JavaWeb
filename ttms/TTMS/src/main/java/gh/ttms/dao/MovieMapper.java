@@ -20,4 +20,8 @@ public interface MovieMapper {
 
     public List<String> getMovieNameNotShow();
 
+    public void updateMovieStatus(String moviename);
+
+    public void deleteMovie(String moviename);
+
 }

@@ -10,7 +10,7 @@
     </select>
 
     <select id="getMovieList" resultType="gh.ttms.pojo.Movie">
-        select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production,status from movie;
+        select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production,status from movie where status!=-1;
     </select>
 
     <insert id="addPhoto" parameterType="gh.ttms.pojo.Movie">
@@ -52,4 +52,12 @@
     <select id="getMovieNameNotShow" resultType="String">
          select moviename from movie where status=0;
     </select>
+
+    <update id="updateMovieStatus" parameterType="String">
+        update movie set status=1 where moviename=#{moviename};
+    </update>
+
+    <update id="deleteMovie" parameterType="String">
+        update movie set status=-1 where moviename=#{moviename};
+    </update>
 </mapper>

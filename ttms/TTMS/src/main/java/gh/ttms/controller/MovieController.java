@@ -125,4 +125,14 @@ public class MovieController {
     {
         return movieService.getMovieNameNotShow();
     }
+
+    @RequestMapping("/takeMovieON")
+    @ResponseBody
+    public Map<String,String> alterMovieStatus(@RequestBody Map<String,String> map)
+    {
+        movieService.takeMovieON(map.get("moviename"));
+        map.put("status","200");
+        map.put("message","OjbK");
+        return map;
+    }
 }

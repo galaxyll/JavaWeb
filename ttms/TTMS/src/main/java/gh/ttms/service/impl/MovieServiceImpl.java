@@ -54,5 +54,15 @@ public class MovieServiceImpl implements MovieService {
         return movieList;
     }
 
+    @Override
+    public void takeMovieON(String moviename) {
+        movieMapper.updateMovieStatus(moviename);
+    }
+
+    @Override
+    public void takeMovieDown(String moviename) {
+        movieMapper.deleteMovie(moviename);
+    }
+
 
 }
