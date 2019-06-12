@@ -6,7 +6,6 @@ public class Hall {
     private String type;
     private Integer hallRow;
     private Integer hallColumn;
-    private Integer seatTotal;
     private String status;
 
     public String getHallname() {
@@ -47,14 +46,6 @@ public class Hall {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public Integer getSeatTotal() {
-        return seatTotal;
-    }
-
-    public void setSeatTotal(Integer seatTotal) {
-        this.seatTotal = seatTotal;
     }
 
 

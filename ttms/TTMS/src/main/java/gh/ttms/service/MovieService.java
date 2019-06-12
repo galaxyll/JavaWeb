@@ -10,4 +10,6 @@ public interface MovieService {
     public List<Movie> getMovieList();
     public int getID(String moviename);
     public Movie getMovieByName(String moviename);
+    public void alterMovie(Movie movie);
+    public List<String> getMovieNameNotShow();
 }

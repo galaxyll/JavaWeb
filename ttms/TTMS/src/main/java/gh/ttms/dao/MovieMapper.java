@@ -15,4 +15,9 @@ public interface MovieMapper {
     public Integer getIDByName(String moviename);
 
     public List<Movie> getMovieList();
+
+    public void updateMovie(Movie movie);
+
+    public List<String> getMovieNameNotShow();
+
 }

@@ -6,11 +6,11 @@
         insert into movie(moviename,type, duration, introduction, release_date,author,production) values (#{moviename},#{type},#{duration},#{introduction},#{releaseDate},#{author},#{production});
     </insert>
     <select id="getMovieByName"  resultType="gh.ttms.pojo.Movie">
-        select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production from movie where moviename=#{moviename};
+        select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production,status from movie where moviename=#{moviename};
     </select>
 
     <select id="getMovieList" resultType="gh.ttms.pojo.Movie">
-        select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production from movie;
+        select moviename, photo, type, duration, introduction, release_date as releaseDate,score,author,production,status from movie;
     </select>
 
     <insert id="addPhoto" parameterType="gh.ttms.pojo.Movie">
@@ -19,5 +19,37 @@
 
     <select id="getIDByName" parameterType="String" resultType="int">
         select id from movie where moviename=#{moviename}
+    </select>
+
+    <update id="updateMovie" parameterType="gh.ttms.pojo.Movie">
+        update movie
+        <set>
+        <if test="photo != null">
+            photo=#{photo},
+        </if>
+        <if test="type != null">
+            type=#{type},
+        </if>
+        <if test="duration != null">
+            duration=#{duration},
+        </if>
+        <if test="introduction != null">
+            introduction=#{introduction},
+        </if>
+        <if test="releaseDate != null">
+            release_date=#{releaseDate},
+        </if>
+        <if test="production != null">
+            production=#{production},
+        </if>
+        <if test="status != null">
+            status=#{status}
+        </if>
+        </set>
+        where moviename=#{moviename};
+    </update>
+
+    <select id="getMovieNameNotShow" resultType="String">
+         select moviename from movie where status=0;
     </select>
 </mapper>

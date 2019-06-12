@@ -40,10 +40,18 @@ public class MovieServiceImpl implements MovieService {
     @Override
     public Movie getMovieByName(String moviename) {
         Movie movie = movieMapper.getMovieByName(moviename);
-        if (movie==null){
-            System.out.println("movie==null");
-        }
         return movie;
+    }
+
+    @Override
+    public void alterMovie(Movie movie) {
+        movieMapper.updateMovie(movie);
+    }
+
+    @Override
+    public List<String> getMovieNameNotShow() {
+        List<String> movieList = movieMapper.getMovieNameNotShow();
+        return movieList;
     }
 
 

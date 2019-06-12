@@ -106,4 +106,23 @@ public class MovieController {
     {
         return movieService.getMovieByName(movie.get("moviename"));
     }
+
+    @ResponseBody
+    @RequestMapping("/alterMovie")
+    public Map<String,String> alterMovie(@RequestBody Movie movie)
+    {
+        Map<String,String> map = new HashMap<>();
+        movieService.alterMovie(movie);
+        System.out.println(movieService.getMovieByName(movie.getMoviename()).getDuration());
+        map.put("status","200");
+        map.put("message","OK");
+        return map;
+    }
+
+    @ResponseBody
+    @RequestMapping("/getMovieNameListNotShow")
+    public List<String> getMovieNameNotShow()
+    {
+        return movieService.getMovieNameNotShow();
+    }
 }

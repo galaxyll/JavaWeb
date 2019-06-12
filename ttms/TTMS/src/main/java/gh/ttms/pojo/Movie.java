@@ -12,6 +12,7 @@ public class Movie {
     private Float score;
     private String author;
     private String production;
+    private Integer status;
 
     public Movie() {
     }
@@ -87,5 +88,13 @@ public class Movie {
 
     public void setProduction(String production) {
         this.production = production;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 }
