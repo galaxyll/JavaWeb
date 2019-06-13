@@ -2,6 +2,7 @@ package gh.ttms.service.impl;
 
 import gh.ttms.dao.MovieMapper;
 import gh.ttms.pojo.Movie;
+import gh.ttms.pojo.param.IntAndString;
 import gh.ttms.pojo.param.Stringstring;
 import gh.ttms.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service("movieService")
-public class MovieServiceImpl
-        implements MovieService {
+public class MovieServiceImpl implements MovieService {
 
     @Autowired
     private MovieMapper movieMapper;
@@ -82,6 +82,15 @@ public class MovieServiceImpl
             return movieMapper.getFutureMovieList();
         }
         return null;
+    }
+
+    @Override
+    public void addMovieQuantity(String moviename) {
+        IntAndString param = new IntAndString();
+        param.setName(moviename);
+        param.setNum(movieMapper.getMovieQuantity(param.getName()));
+        param.setNum(param.getNum()+1);
+        movieMapper.addMovieQuantity(param);
     }
 
 

@@ -1,12 +1,16 @@
 package gh.ttms.controller;
 
+import gh.ttms.pojo.Seat;
+import gh.ttms.pojo.Ticket;
 import gh.ttms.pojo.User;
-import gh.ttms.service.UserService;
+import gh.ttms.pojo.param.IDAndDate;
+import gh.ttms.service.*;
 import gh.ttms.service.impl.MailServiceImpl;
 import gh.ttms.util.VerificationCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -14,15 +18,23 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @Controller
 public class UserController {
     @Autowired
     @Qualifier("userService")
     private UserService userService;
+    @Autowired
+    private PlanService planService;
+    @Autowired
+    private SeatService seatService;
+    @Autowired
+    private HallService hallService;
+    @Autowired
+    private MovieService movieService;
+    @Autowired
+    private TicketService ticketService;
     @Autowired
     private MailServiceImpl mailService;
     @Autowired
@@ -116,6 +128,7 @@ public class UserController {
 //        return map;
         return respMap;
     }
+
     @RequestMapping("/login")
     @ResponseBody
     public Map<String,String> login(@RequestBody User user, HttpSession httpSession)
@@ -132,6 +145,47 @@ public class UserController {
             map.put("message","密码或用户名错误，请重新输入！");
         }
         System.out.println("进入login方法");
+        return map;
+    }
+
+    @ResponseBody
+    @RequestMapping("/buyTicket/{username}")
+    public Map<String,String> buyTicket(@PathVariable("username") String username, @RequestBody List<Seat> seatList)
+    {
+        Map<String,String> map = new HashMap<>();
+        User user = userService.getUserByName(username);
+        double amountMoney = 0;
+        Ticket ticket = null;
+        IDAndDate param = new IDAndDate();
+        for (Seat seat:seatList){
+            param.setId(seat.getSeatID());
+            param.setShowDate(seat.getUseDate());
+            System.out.println(planService.getPlanPrice(param));
+            amountMoney += planService.getPlanPrice(param);
+        }
+        if (user.getMoney()<amountMoney){
+            map.put("status","500");
+            map.put("message","余额不足，请充值！");
+        }else{
+            user.setMoney(user.getMoney()-amountMoney);
+            for (Seat seat:seatList){
+                param.setId(seat.getSeatID());
+                param.setShowDate(seat.getUseDate());
+                seat.setStatus(1);
+                seatService.alterSeatStatus(seat);
+                ticket = new Ticket();
+                ticket.setMoviename(planService.getPlanMoviename(param));
+                ticket.setPlayDate(seat.getUseDate());
+                ticket.setSeatRow(seat.getSeatRow());
+                ticket.setSeatColumn(seat.getSeatColumn());
+                ticket.setHallname(hallService.getHallname(seat.getSeatID()));
+                ticket.setHallType(hallService.getHallByID(seat.getSeatID()).getType());
+                ticketService.addTicket(ticket);
+                movieService.addMovieQuantity(ticket.getMoviename());
+            }
+            map.put("status","200");
+            map.put("message","购票成功！");
+        }
         return map;
     }
 }

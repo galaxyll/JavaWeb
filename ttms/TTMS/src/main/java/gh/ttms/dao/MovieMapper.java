@@ -1,6 +1,7 @@
 package gh.ttms.dao;
 
 import gh.ttms.pojo.Movie;
+import gh.ttms.pojo.param.IntAndString;
 import gh.ttms.pojo.param.Stringstring;
 
 import java.util.List;
@@ -30,5 +31,8 @@ public interface MovieMapper {
     public List<Stringstring> getHotMovieList();
     public List<Stringstring> getHighMovieList();
     public List<Stringstring> getFutureMovieList();
+
+    public int getMovieQuantity(String moviename);
+    public void addMovieQuantity(IntAndString param);
 
 }

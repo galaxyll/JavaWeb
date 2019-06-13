@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gh.ttms.dao.TicketMapper">
+    <insert id="addTicket" parameterType="gh.ttms.pojo.Ticket">
+        insert into ticket(moviename, play_date, seat_row, seat_column, ticket_price, username, hallname, hall_type) values (#{moviename},#{playDate},#{seatRow},#{seatColumn},#{ticketPrice},#{username},#{hallname},#{hallType});
+    </insert>
+</mapper>

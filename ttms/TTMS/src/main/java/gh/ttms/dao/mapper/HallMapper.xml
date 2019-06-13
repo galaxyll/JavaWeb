@@ -16,4 +16,7 @@
     <select id="getHallByID" resultType="gh.ttms.pojo.Hall">
         select * from hall where hall_id=#{hallID};
     </select>
+    <select id="getHallname" parameterType="int" resultType="String">
+        select hallname from hall where hall_id=#{id};
+    </select>
 </mapper>

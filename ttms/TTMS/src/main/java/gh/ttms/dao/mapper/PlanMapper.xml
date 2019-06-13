@@ -22,4 +22,10 @@
     <delete id="delPlan" parameterType="gh.ttms.pojo.param.IDAndDate">
         delete from plan where hall_id=#{id} and play_date=#{showDate};
     </delete>
+    <select id="getPlanPrice" parameterType="gh.ttms.pojo.param.IDAndDate" resultType="Double">
+        select ticket_price from plan where hall_id=#{id} and play_date=#{showDate};
+    </select>
+    <select id="getPlanMoviename" parameterType="gh.ttms.pojo.param.IDAndDate" resultType="String">
+        select moviename from plan where hall_id=#{id} and play_date=#{showDate};
+    </select>
 </mapper>

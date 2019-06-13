@@ -8,6 +8,7 @@ import java.util.Date;
 public class InquireSeatStatusPojo {
     private String hallname;
     private Integer hallID;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date showDate;
     private Integer seatRow;
     private Integer seatCol;

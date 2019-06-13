@@ -2,9 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="gh.ttms.dao.SeatMapper">
     <insert id="addSeat" parameterType="gh.ttms.pojo.Seat">
-        insert into seat(seat_id, seat_row, seat_column) VALUES (#{seatID},#{seatRow},#{seatColumn});
+        insert into seat(seat_id, seat_row, seat_column,use_date) VALUES (#{seatID},#{seatRow},#{seatColumn},#{useDate});
     </insert>
     <select id="getSeatStatus" parameterType="gh.ttms.pojo.param.InquireSeatStatusPojo" resultType="int">
         select status from seat where seat_id=#{hallID} and seat_row=#{seatRow} and seat_column=#{seatCol} and use_date=#{showDate};
     </select>
+    <update id="updateStatus" parameterType="gh.ttms.pojo.Seat">
+        update seat set status=#{status} where seat_id=#{seatID} and use_date=#{useDate} and seat_row=#{seatRow} and seat_column=#{seatColumn};
+    </update>
 </mapper>

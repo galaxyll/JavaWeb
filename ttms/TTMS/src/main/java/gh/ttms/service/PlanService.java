@@ -18,4 +18,6 @@ public interface PlanService {
     public List<Movie> getNewMovie();
     public List<PlanAddNameType> getMoviePlanByDate(DateAndName param);
     public void delPlan(IDAndDate param);
+    public Double getPlanPrice(IDAndDate param);
+    public String getPlanMoviename(IDAndDate param);
 }

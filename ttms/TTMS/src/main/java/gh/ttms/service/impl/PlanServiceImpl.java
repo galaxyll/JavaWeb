@@ -68,5 +68,15 @@ public class PlanServiceImpl implements PlanService {
         planMapper.delPlan(param);
     }
 
+    @Override
+    public Double getPlanPrice(IDAndDate param) {
+        return planMapper.getPlanPrice(param);
+    }
+
+    @Override
+    public String getPlanMoviename(IDAndDate param) {
+        return planMapper.getPlanMoviename(param);
+    }
+
 
 }

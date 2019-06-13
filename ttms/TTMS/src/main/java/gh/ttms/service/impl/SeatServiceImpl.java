@@ -22,6 +22,7 @@ public class SeatServiceImpl implements SeatService {
         Seat seat = new Seat();
         Integer id = plan.getHallID();
         seat.setSeatID(id);
+        seat.setUseDate(plan.getPlayDate());
         Hall hall = hallService.getHallByID(id);
         for (int i=1;i<=hall.getHallRow();i++) {
             for (int j = 1; j <= hall.getHallColumn(); j++) {
@@ -34,7 +35,12 @@ public class SeatServiceImpl implements SeatService {
     }
 
     @Override
-    public Integer getSeatStatus(InquireSeatStatusPojo param) {
+    public int getSeatStatus(InquireSeatStatusPojo param) {
         return seatMapper.getSeatStatus(param);
+    }
+
+    @Override
+    public void alterSeatStatus(Seat seat) {
+        seatMapper.updateStatus(seat);
     }
 }

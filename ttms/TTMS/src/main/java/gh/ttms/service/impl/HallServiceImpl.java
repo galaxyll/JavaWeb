@@ -30,6 +30,11 @@ public class HallServiceImpl implements HallService {
     }
 
     @Override
+    public String getHallname(Integer id) {
+        return hallMapper.getHallname(id);
+    }
+
+    @Override
     public List<Hall> getHallList() {
         return hallMapper.getHallList();
     }

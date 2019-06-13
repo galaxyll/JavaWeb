@@ -66,13 +66,18 @@
     </update>
 
     <select id="getHotMovieList" resultType="gh.ttms.pojo.param.Stringstring">
-        select moviename as name,photo as url from movie order by quantity;
+        select moviename as name,photo as url from movie where status=1 order by quantity;
     </select>
     <select id="getHighMovieList" resultType="gh.ttms.pojo.param.Stringstring">
-        select moviename as name,photo as url from movie order by score;
+        select moviename as name,photo as url from movie where status=1 order by score;
     </select>
     <select id="getFutureMovieList" resultType="gh.ttms.pojo.param.Stringstring">
-        select moviename as name,photo as url from movie where release_date>now() order by release_date desc;
+        select moviename as name,photo as url from movie where release_date>now() and status=1 order by release_date desc;
     </select>
-
+    <update id="addMovieQuantity" parameterType="gh.ttms.pojo.param.IntAndString">
+        update movie set quantity=#{num} where moviename=#{name};
+    </update>
+    <select id="getMovieQuantity" parameterType="String" resultType="int">
+        select quantity from movie where moviename=#{moviename};
+    </select>
 </mapper>

@@ -1,5 +1,7 @@
 package gh.ttms.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class Seat {
@@ -7,6 +9,7 @@ public class Seat {
     private Integer seatRow;
     private Integer seatColumn;
     private Integer status;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date useDate;
 
     public Integer getSeatID() {
