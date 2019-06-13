@@ -26,12 +26,15 @@ public class SeatController {
         Hall hall = hallService.getHallByID(param.getHallID());
         param.setSeatRow(hall.getHallRow());
         param.setSeatCol(hall.getHallColumn());
+        int row = param.getSeatRow();
+        int col = param.getSeatCol();
         int[][] seatStatus = new int[param.getSeatRow()][param.getSeatCol()];
-        for (int i=1;i<=param.getSeatRow();i++){
-            for (int j=1;j<=param.getSeatCol();j++){
+        for (int i=1;i<=row;i++){
+            for (int j=1;j<=col;j++){
                 param.setSeatRow(i);
                 param.setSeatCol(j);
                 seatStatus[i-1][j-1] = seatService.getSeatStatus(param);
+                System.out.println(param.getHallID()+"号厅： row:"+param.getSeatRow()+"col:"+param.getSeatCol()+"status:"+seatService.getSeatStatus(param));
             }
         }
         return seatStatus;

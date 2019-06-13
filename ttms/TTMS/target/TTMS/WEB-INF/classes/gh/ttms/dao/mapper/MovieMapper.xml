@@ -80,4 +80,19 @@
     <select id="getMovieQuantity" parameterType="String" resultType="int">
         select quantity from movie where moviename=#{moviename};
     </select>
+    <select id="getPhotoByName" parameterType="String" resultType="String">
+        select photo from movie where moviename=#{moviename};
+    </select>
+    <update id="alterTotalScore" parameterType="gh.ttms.pojo.param.IntAndString">
+        update movie set totalScore=#{num} where moviename=#{name};
+    </update>
+    <update id="alterScore" parameterType="gh.ttms.pojo.param.FloatAndString">
+        update movie set score=#{num} where moviename=#{name};
+    </update>
+    <select id="getTotalScore" parameterType="String" resultType="int">
+        select totalScore from movie where moviename=#{moviename};
+    </select>
+    <select id="getMovieSell" resultType="gh.ttms.pojo.param.IntAndString">
+        select moviename as name, quantity as num from movie;
+    </select>
 </mapper>

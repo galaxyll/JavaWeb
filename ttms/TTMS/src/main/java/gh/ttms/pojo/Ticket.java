@@ -1,9 +1,12 @@
 package gh.ttms.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class Ticket {
     private String moviename;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date playDate;
     private  Integer seatRow;
     private Integer seatColumn;
@@ -11,6 +14,9 @@ public class Ticket {
     private String username;
     private String hallname;
     private String hallType;
+    private Integer isTake;
+    private Integer isMark;
+    private String photo;
 
     public String getMoviename() {
         return moviename;
@@ -74,5 +80,29 @@ public class Ticket {
 
     public void setHallType(String hallType) {
         this.hallType = hallType;
+    }
+
+    public Integer getIsTake() {
+        return isTake;
+    }
+
+    public void setIsTake(Integer isTake) {
+        this.isTake = isTake;
+    }
+
+    public Integer getIsMark() {
+        return isMark;
+    }
+
+    public void setIsMark(Integer isMark) {
+        this.isMark = isMark;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 }

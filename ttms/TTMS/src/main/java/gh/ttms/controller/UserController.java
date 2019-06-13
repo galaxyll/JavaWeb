@@ -4,6 +4,7 @@ import gh.ttms.pojo.Seat;
 import gh.ttms.pojo.Ticket;
 import gh.ttms.pojo.User;
 import gh.ttms.pojo.param.IDAndDate;
+import gh.ttms.pojo.param.IntAndString;
 import gh.ttms.service.*;
 import gh.ttms.service.impl.MailServiceImpl;
 import gh.ttms.util.VerificationCode;
@@ -140,6 +141,7 @@ public class UserController {
             httpSession.setAttribute("user",user);
             map.put("status","200");
             map.put("message","OK");
+            map.put("type",getuser.getType().toString());
         }else {
             map.put("status","500");
             map.put("message","密码或用户名错误，请重新输入！");
@@ -168,23 +170,133 @@ public class UserController {
             map.put("message","余额不足，请充值！");
         }else{
             user.setMoney(user.getMoney()-amountMoney);
+            userService.addMoney(user,0);
             for (Seat seat:seatList){
                 param.setId(seat.getSeatID());
                 param.setShowDate(seat.getUseDate());
                 seat.setStatus(1);
                 seatService.alterSeatStatus(seat);
                 ticket = new Ticket();
+                ticket.setUsername(username);
                 ticket.setMoviename(planService.getPlanMoviename(param));
+                ticket.setTicketPrice(planService.getPlanPrice(param));
                 ticket.setPlayDate(seat.getUseDate());
                 ticket.setSeatRow(seat.getSeatRow());
                 ticket.setSeatColumn(seat.getSeatColumn());
                 ticket.setHallname(hallService.getHallname(seat.getSeatID()));
                 ticket.setHallType(hallService.getHallByID(seat.getSeatID()).getType());
+                ticket.setPhoto(movieService.getPhotoByName(planService.getPlanMoviename(param)));
                 ticketService.addTicket(ticket);
                 movieService.addMovieQuantity(ticket.getMoviename());
             }
             map.put("status","200");
             map.put("message","购票成功！");
+        }
+        return map;
+    }
+
+    @ResponseBody
+    @RequestMapping("/addMoney")
+    public Map<String,String> buyTicket(@RequestBody IntAndString param)
+    {
+        Map<String,String> map = new HashMap<>();
+        User user = userService.getUserByName(param.getName());
+        userService.addMoney(user,param.getNum());
+        map.put("status","200");
+        map.put("message","OK");
+        return map;
+    }
+
+    @ResponseBody
+    @RequestMapping("/getTicketList")
+    public List<Ticket> getTicketList(@RequestBody Map<String,String> map)
+    {
+        return ticketService.getTicketList(map.get("username"));
+    }
+
+    @ResponseBody
+    @RequestMapping("/takeTicket")
+    public Map<String,String> takeTicket(@RequestBody Ticket ticket)
+    {
+        Map<String,String> map = new HashMap<>();
+        System.out.println(ticket.getHallname());
+        System.out.println(ticket.getPlayDate().toString());
+        System.out.println(ticket.getSeatRow());
+        System.out.println(ticket.getSeatColumn());
+        System.out.println(ticket.getUsername());
+        ticketService.takeTicket(ticket);
+        map.put("status","200");
+        map.put("message","OK");
+        return map;
+    }
+
+    @ResponseBody
+    @RequestMapping("/markTicket")
+    public Map<String,String> markTicket(@RequestBody Ticket ticket)
+    {
+//        System.out.println(ticket.getHallname());
+//        System.out.println(ticket.getPlayDate().toString());
+//        System.out.println(ticket.getSeatRow());
+//        System.out.println(ticket.getSeatColumn());
+//        System.out.println(ticket.getUsername());
+//        System.out.println(ticket.getIsMark());
+        Map<String,String> map = new HashMap<>();
+        movieService.markMovie(ticket);
+        ticketService.markTicket(ticket);
+        map.put("status","200");
+        map.put("message","OK");
+        return map;
+    }
+
+    @ResponseBody
+    @RequestMapping("/reTicket")
+    public Map<String,String> reTicket(@RequestBody Ticket ticket)
+    {
+        System.out.println(ticket.getHallname());
+        System.out.println(ticket.getMoviename());
+        System.out.println(ticket.getPlayDate().toString());
+        System.out.println(ticket.getSeatRow());
+        System.out.println(ticket.getSeatColumn());
+        System.out.println(ticket.getUsername());
+        Map<String,String> map = new HashMap<>();
+        if (ticket.getPlayDate().getTime()<=new Date().getTime()){
+            map.put("status","500");
+            map.put("message","电影已经开始，无法退票！");
+        }else {
+            Seat seat = new Seat();
+            seat.setUseDate(ticket.getPlayDate());
+            seat.setSeatID(hallService.getHallID(ticket.getHallname()));
+            seat.setSeatRow(ticket.getSeatRow());
+            seat.setSeatColumn(ticket.getSeatColumn());
+            seat.setStatus(0);
+            seatService.alterSeatStatus(seat);
+            userService.addMoney(userService.getUserByName(ticket.getUsername()),ticket.getTicketPrice());
+            ticketService.delTicket(ticket);
+            map.put("status","200");
+            map.put("message","座位状态已还原，费用已退还，票已删除");
+        }
+        return map;
+    }
+
+    @ResponseBody
+    @RequestMapping("/getUser")
+    public User getUser(@RequestBody Map<String,String> map)
+    {
+        return userService.getUserByName(map.get("username"));
+    }
+    @RequestMapping("/addAdmin")
+    @ResponseBody
+    public Map<String,String> addAdmin(@RequestBody User user)
+    {
+        Map<String,String> map = new HashMap<>();
+        map.put("status","200");
+        map.put("message","Ok");
+        try{
+            userService.addAdmin(user);
+        }catch (Exception e){
+            e.printStackTrace();
+            map.put("status","500");
+            map.put("message","创建管理员失败，请检查是否重名！");
         }
         return map;
     }

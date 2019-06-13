@@ -20,4 +20,10 @@
   <update id="updateUser" parameterType="user">
     update user set username=#{username},password=#{password},mailbox=#{mailbox},money=#{money},type=#{type},note=#{note} from user where id=#{id};
   </update>
+  <update id="addMoney" parameterType="gh.ttms.pojo.User">
+    update user set money=#{money} where username=#{username};
+  </update>
+  <insert id="addAdmin" parameterType="gh.ttms.pojo.User">
+    insert into user (username, password,type) values (#{username},#{password},#{type});
+  </insert>
 </mapper>

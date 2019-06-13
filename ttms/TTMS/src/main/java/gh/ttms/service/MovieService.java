@@ -1,6 +1,7 @@
 package gh.ttms.service;
 
 import gh.ttms.pojo.Movie;
+import gh.ttms.pojo.Ticket;
 import gh.ttms.pojo.param.IntAndString;
 import gh.ttms.pojo.param.Stringstring;
 
@@ -19,4 +20,8 @@ public interface MovieService {
     public void takeMovieDown(String moviename);
     public List<Stringstring> getHHFMovieList(String type);
     public void addMovieQuantity(String param);
+    public String getPhotoByName(String moviename);
+    public void markMovie(Ticket ticket);
+    public List<IntAndString> getMovieSell();
+    public void delMovie(String moviename);
 }

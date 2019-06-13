@@ -1,6 +1,7 @@
 package gh.ttms.controller;
 
 import gh.ttms.pojo.Movie;
+import gh.ttms.pojo.param.IntAndString;
 import gh.ttms.pojo.param.Stringstring;
 import gh.ttms.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -150,5 +151,22 @@ public class MovieController {
     public List<Stringstring> getMovieListType(@PathVariable("type") String type)
     {
         return movieService.getHHFMovieList(type);
+    }
+
+    @RequestMapping("/getMovieSell")
+    @ResponseBody
+    public List<IntAndString> getMovieSell()
+    {
+        return movieService.getMovieSell();
+    }
+
+    @RequestMapping("/delMovie")
+    @ResponseBody
+    public Map<String,String> delMovie(@RequestBody Map<String,String> map)
+    {
+        movieService.delMovie(map.get("moviename"));
+        map.put("status","200");
+        map.put("message","OjbK");
+        return map;
     }
 }

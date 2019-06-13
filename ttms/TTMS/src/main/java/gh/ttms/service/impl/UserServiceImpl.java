@@ -39,4 +39,23 @@ public class UserServiceImpl implements UserService {
     public User getUserByName(String username) {
         return userMapper.getUserByName(username);
     }
+
+    @Override
+    public void addMoney(User user,int money) {
+        user.setMoney(user.getMoney()+money);
+        userMapper.addMoney(user);
+    }
+
+    @Override
+    public void addMoney(User user, double money) {
+        user.setMoney(user.getMoney()+money);
+        userMapper.addMoney(user);
+    }
+
+    @Override
+    public void addAdmin(User user) {
+        user.setType(1);
+        userMapper.addAdmin(user);
+    }
+
 }

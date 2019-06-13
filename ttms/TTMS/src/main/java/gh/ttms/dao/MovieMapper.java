@@ -1,6 +1,7 @@
 package gh.ttms.dao;
 
 import gh.ttms.pojo.Movie;
+import gh.ttms.pojo.param.FloatAndString;
 import gh.ttms.pojo.param.IntAndString;
 import gh.ttms.pojo.param.Stringstring;
 
@@ -35,4 +36,10 @@ public interface MovieMapper {
     public int getMovieQuantity(String moviename);
     public void addMovieQuantity(IntAndString param);
 
+    public String getPhotoByName(String moviename);
+    public void alterTotalScore(IntAndString param);
+    public void alterScore(FloatAndString param);
+
+    public int getTotalScore(String moviename);
+    public List<IntAndString> getMovieSell();
 }
