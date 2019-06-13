@@ -1,6 +1,7 @@
 package gh.ttms.controller;
 
 import gh.ttms.pojo.Movie;
+import gh.ttms.pojo.param.Stringstring;
 import gh.ttms.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -142,5 +143,12 @@ public class MovieController {
         map.put("status","200");
         map.put("message","OjbK");
         return map;
+    }
+
+    @RequestMapping("/getMovieList/{type}")
+    @ResponseBody
+    public List<Stringstring> getMovieListType(@PathVariable("type") String type)
+    {
+        return movieService.getHHFMovieList(type);
     }
 }

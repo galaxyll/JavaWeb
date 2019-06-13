@@ -13,6 +13,8 @@ public class Movie {
     private String author;
     private String production;
     private Integer status;
+    private Integer quantity;
+    private Integer totalScore;
 
     public Movie() {
     }
@@ -96,5 +98,21 @@ public class Movie {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Integer getTotalScore() {
+        return totalScore;
+    }
+
+    public void setTotalScore(Integer totalScore) {
+        this.totalScore = totalScore;
     }
 }

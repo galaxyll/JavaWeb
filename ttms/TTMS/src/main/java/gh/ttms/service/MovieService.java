@@ -1,6 +1,7 @@
 package gh.ttms.service;
 
 import gh.ttms.pojo.Movie;
+import gh.ttms.pojo.param.Stringstring;
 
 import java.util.List;
 
@@ -15,4 +16,5 @@ public interface MovieService {
     public List<String> getMovieNameHadShow();
     public void takeMovieON(String moviename);
     public void takeMovieDown(String moviename);
+    public List<Stringstring> getHHFMovieList(String type);
 }

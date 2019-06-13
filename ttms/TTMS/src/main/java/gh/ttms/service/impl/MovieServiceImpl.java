@@ -2,6 +2,7 @@ package gh.ttms.service.impl;
 
 import gh.ttms.dao.MovieMapper;
 import gh.ttms.pojo.Movie;
+import gh.ttms.pojo.param.Stringstring;
 import gh.ttms.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,7 +10,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service("movieService")
-public class MovieServiceImpl implements MovieService {
+public class MovieServiceImpl
+        implements MovieService {
 
     @Autowired
     private MovieMapper movieMapper;
@@ -68,6 +70,18 @@ public class MovieServiceImpl implements MovieService {
     @Override
     public void takeMovieDown(String moviename) {
         movieMapper.deleteMovie(moviename);
+    }
+
+    @Override
+    public List<Stringstring> getHHFMovieList(String type) {
+        if (type.equals("Hot")){
+            return movieMapper.getHotMovieList();
+        } else if (type.equals("High")){
+            return movieMapper.getHighMovieList();
+        }else if (type.equals("Future")){
+            return movieMapper.getFutureMovieList();
+        }
+        return null;
     }
 
 

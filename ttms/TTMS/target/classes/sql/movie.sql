@@ -12,5 +12,7 @@ create table movie(
   author varchar(100) default "暂无作者" not null,
   production varchar(400),
   status int default 0 not null,
-  quantity int default 0 not null
+  quantity int default 0 not null,
+  totalScore int default 0 not null
+
 );
