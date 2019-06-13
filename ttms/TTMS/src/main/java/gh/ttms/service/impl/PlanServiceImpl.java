@@ -4,6 +4,8 @@ import gh.ttms.dao.PlanMapper;
 import gh.ttms.pojo.Movie;
 import gh.ttms.pojo.Plan;
 import gh.ttms.pojo.param.DateAndName;
+import gh.ttms.pojo.param.IDAndDate;
+import gh.ttms.pojo.param.PlanAddNameType;
 import gh.ttms.service.MovieService;
 import gh.ttms.service.PlanService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,15 +33,17 @@ public class PlanServiceImpl implements PlanService {
 
 
     @Override
-    public Set<Date> getShowDateByName(String moviename) {
-        List<Date> dateList = planMapper.getShowDateByName(moviename);
-        Set<Date> dateSet = new HashSet<>();
-        Date dateTmp = null;
-        for (Date date : dateList){
-            dateTmp = new Date(date.getTime()-date.getTime()%(1000*60*60*24));
-            dateSet.add(dateTmp);
-        }
-        return dateSet;
+    public List<Date> getShowDateByName(String moviename) {
+        return planMapper.getShowDateByName(moviename);
+//        Set<Date> dateSet = new HashSet<>();
+//        Date dateTmp = null;
+//        for (Date date : dateList){
+//            System.out.println("前："+date.toString());
+//            dateTmp = new Date(date.getTime()-date.getTime()%(1000*60*60*32));
+//            System.out.println("后："+dateTmp.toString());
+//            dateSet.add(dateTmp);
+//        }
+//        return dateSet;
     }
 
     @Override
@@ -55,8 +59,13 @@ public class PlanServiceImpl implements PlanService {
     }
 
     @Override
-    public List<Plan> getMoviePlanByDate(DateAndName param) {
+    public List<PlanAddNameType> getMoviePlanByDate(DateAndName param) {
         return planMapper.getMoviePlanByDate(param);
+    }
+
+    @Override
+    public void delPlan(IDAndDate param) {
+        planMapper.delPlan(param);
     }
 
 

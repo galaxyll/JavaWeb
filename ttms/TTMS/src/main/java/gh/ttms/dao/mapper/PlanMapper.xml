@@ -13,10 +13,13 @@
     <select id="getNewMovienameList" resultType="String">
         select distinct moviename from plan where  (to_days(now()) &lt; (to_days(play_date)+2) and play_date &lt; now());
     </select>
-    <select id="getMoviePlanByDate" parameterType="gh.ttms.pojo.param.DateAndName" resultType="gh.ttms.pojo.Plan">
-        select moviename,hall_id as hallID,play_date as playDate,ticket_price as ticketPrice,end_date as endDate from plan where moviename=#{name} and to_days(play_date)=to_days(#{showDate})+1 ;
+    <select id="getMoviePlanByDate" parameterType="gh.ttms.pojo.param.DateAndName" resultType="gh.ttms.pojo.param.PlanAddNameType">
+        select moviename,plan.hall_id as hallID,play_date as playDate,ticket_price as ticketPrice,end_date as endDate,hallname as hallName,hall.type as hallType from plan,hall where moviename=#{name} and to_days(play_date)=to_days(#{showDate}) and plan.hall_id=hall.hall_id;
     </select>
     <!--<select id="getMoviePlanByDate" parameterType="gh.ttms.pojo.param.DateAndName" resultType="gh.ttms.pojo.param.Longlong">-->
         <!--select to_days(play_date) as playDate,to_days(#{showDate}) as param from plan where moviename=#{name} ;-->
     <!--</select>-->
+    <delete id="delPlan" parameterType="gh.ttms.pojo.param.IDAndDate">
+        delete from plan where hall_id=#{id} and play_date=#{showDate};
+    </delete>
 </mapper>
