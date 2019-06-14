@@ -103,6 +103,9 @@ public class MovieServiceImpl implements MovieService {
     @Override
     public void markMovie(Ticket ticket) {
         IntAndString param = new IntAndString();
+        System.out.println(ticket.getMoviename());
+        System.out.println(movieMapper.getTotalScore(ticket.getMoviename()));
+        System.out.println(ticket.getIsMark());
         param.setName(ticket.getMoviename());
         param.setNum(ticket.getIsMark()+movieMapper.getTotalScore(ticket.getMoviename()));
         System.out.println("传入总分："+param.getNum());

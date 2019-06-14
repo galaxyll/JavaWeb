@@ -10,57 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3314623-ead2-40c9-aa96-3c1b1f261341" name="Default Changelist" comment="完善了注册部分的代码">
-      <change afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/FloatAndString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/controller/SeatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/controller/SeatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/CartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/HistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/CartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/HistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/HistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/HistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/cart.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/history.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/MovieMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/MovieMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/TicketMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/TicketMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/MovieMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/MovieMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/TicketMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/TicketMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/MovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/MovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/TicketServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/ticket.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/ticket.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TTMS.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/controller/SeatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/controller/SeatController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/MovieMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/MovieMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/TicketMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/TicketMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/mapper/MovieMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/mapper/MovieMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/mapper/TicketMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/mapper/TicketMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/dao/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/pojo/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/pojo/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/MovieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/MovieService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/TicketService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/TicketService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/pojo/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/pojo/Movie.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/impl/MovieServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/impl/MovieServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/impl/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/impl/TicketServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/gh/ttms/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/sql/ticket.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/TTMS/WEB-INF/classes/sql/ticket.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/controller/SeatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/controller/SeatController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/dao/MovieMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/dao/MovieMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/dao/TicketMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/dao/TicketMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/dao/mapper/MovieMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/dao/mapper/MovieMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/dao/mapper/TicketMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/dao/mapper/TicketMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/dao/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/dao/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/pojo/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/pojo/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/service/MovieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/service/MovieService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/service/TicketService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/service/TicketService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/pojo/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/pojo/Movie.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/service/impl/MovieServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/service/impl/MovieServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/service/impl/TicketServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/service/impl/TicketServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gh/ttms/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gh/ttms/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/ticket.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sql/ticket.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,29 +86,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="300" column="19" selection-start-line="300" selection-start-column="19" selection-end-line="300" selection-end-column="19" />
+            <state relative-caret-position="215">
+              <caret line="328" column="30" lean-forward="true" selection-start-line="328" selection-start-column="30" selection-end-line="328" selection-end-column="30" />
               <folding>
                 <element signature="method#checkName#0;class#UserController#0" />
                 <element signature="method#checkMail#0;class#UserController#0" />
-                <element signature="e#3007#3042#0" />
+                <element signature="method#register#0;class#UserController#0" />
+                <element signature="method#login#0;class#UserController#0" />
                 <element signature="method#buyTicket#0;class#UserController#0" />
                 <element signature="method#buyTicket#1;class#UserController#0" />
                 <element signature="method#takeTicket#0;class#UserController#0" />
                 <element signature="method#markTicket#0;class#UserController#0" />
-                <element signature="e#8549#8600#0" />
                 <element signature="method#reTicket#0;class#UserController#0" />
-                <element signature="e#10471#10472#0" expanded="true" />
-                <element signature="e#10513#10514#0" expanded="true" />
+                <element signature="method#addAdmin#0;class#UserController#0" />
+                <element signature="method#putMovieToCart#0;class#UserController#0" />
+                <element signature="method#getMovieFromCart#0;class#UserController#0" />
+                <element signature="method#delSelf#0;class#UserController#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/HistoryMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/MovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
+            <state relative-caret-position="86">
               <caret line="164" column="51" selection-start-line="164" selection-start-column="51" selection-end-line="164" selection-end-column="51" />
               <folding>
                 <element signature="method#addMovie#0;class#MovieController#0" />
@@ -144,18 +131,46 @@
                 <element signature="method#getImg#0;class#MovieController#0" />
                 <element signature="method#getMovieByName#0;class#MovieController#0" />
                 <element signature="method#alterMovie#0;class#MovieController#0" />
-                <element signature="e#5292#5293#0" expanded="true" />
-                <element signature="e#5319#5320#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/MovieMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/HistoryMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+            <state relative-caret-position="252">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/CartServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="628">
+              <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/history">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/HistoryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,8 +181,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/MovieMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="842">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="n#update#0;n#mapper#0;n#!!top" />
               </folding>
@@ -175,35 +190,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/MovieService.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/HistoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+            <state relative-caret-position="172">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/UserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="26" column="85" selection-start-line="26" selection-start-column="85" selection-end-line="26" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -211,8 +209,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/MovieServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="125" column="41" selection-start-line="125" selection-start-column="41" selection-end-line="125" selection-end-column="41" />
+            <state relative-caret-position="-434">
+              <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#addPhoto#0;class#MovieServiceImpl#0" />
@@ -220,28 +218,10 @@
                 <element signature="e#1080#1081#0" expanded="true" />
                 <element signature="method#getHHFMovieList#0;class#MovieServiceImpl#0" />
                 <element signature="e#3482#3483#0" expanded="true" />
-                <element signature="e#3509#3510#0" expanded="true" />
+                <element signature="e#3531#3532#0" expanded="true" />
                 <element signature="e#3591#3592#0" expanded="true" />
-                <element signature="e#3617#3618#0" expanded="true" />
+                <element signature="e#3641#3642#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="929">
-              <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -277,20 +257,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/InquireSeatStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Hall.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/sql/plan.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/controller/HallController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/PalnMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/LongLong.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/DateAndName.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/Longlong.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Plan.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/PlanAddNameType.java" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/IDAndDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/controller/PlanController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/sql/movie.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/Stringstring.java" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/SeatService.java" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/InquireSeatStatusPojo.java" />
@@ -320,14 +289,25 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/dao/MovieMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/MovieMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/MovieService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/MovieServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/controller/MovieController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql/cart.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/CartMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/CartService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/CartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql/history.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/dao/HistoryMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/HistoryMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/HistoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/dao/CartMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/MovieServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/HistoryServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -369,7 +349,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -466,10 +445,19 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TTMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -477,7 +465,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560456891492" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560486407738" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -661,17 +649,18 @@
       <workItem from="1560244228191" duration="7803000" />
       <workItem from="1560300161140" duration="43354000" />
       <workItem from="1560392091163" duration="3686000" />
-      <workItem from="1560395816805" duration="54377000" />
+      <workItem from="1560395816805" duration="54603000" />
+      <workItem from="1560478739371" duration="6667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="374725000" />
+    <option name="totallyTimeSpent" value="381618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1634456" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16510215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -682,14 +671,14 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.26852846" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39097744" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.575725" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.17508055" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32867885" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32939914" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3544576" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.17508055" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.22878624" />
@@ -703,7 +692,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.32965213" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.17007178" />
+      <window_info anchor="right" id="Database" order="6" weight="0.17007178" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32965213" />
@@ -805,171 +794,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="完善了注册部分的代码" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-307" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/PlanMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/HallMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/HallMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding>
-            <marker date="1560422036227" expanded="true" signature="613:752" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/HallService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Hall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1847">
-          <caret line="64" column="48" lean-forward="true" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Seat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/seat.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/hall">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/seat">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/SeatService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/InquireSeatStatusPojo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/HallServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-          <folding>
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/MailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/SeatServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/HallController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -998,29 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#2150#2151#0" expanded="true" />
-            <element signature="e#2183#2184#0" expanded="true" />
-            <element signature="e#2236#2237#0" expanded="true" />
-            <element signature="e#2280#2281#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Plan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="67" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1064,17 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/PlanMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
-          <folding>
-            <element signature="e#856#860#0" expanded="true" />
-            <element signature="e#898#902#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/PlanController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -1101,20 +891,6 @@
             <element signature="e#2156#2157#0" expanded="true" />
             <element signature="e#2213#2214#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/movie">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/plan">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1211,10 +987,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/UserMapper.java">
+    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/movie">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/MovieService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="720">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1223,96 +1006,180 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
+        <state relative-caret-position="936">
           <caret line="26" column="85" selection-start-line="26" selection-start-column="85" selection-end-line="26" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/PlanMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#856#860#0" expanded="true" />
+            <element signature="e#898#902#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/plan">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/Stringstring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/HallMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="43" />
+          <folding>
+            <marker date="1560422036227" expanded="true" signature="613:752" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/cart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/seat">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/cart.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Hall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Plan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="67" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/pojo/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
+            <element signature="e#2236#2237#0" expanded="true" />
+            <element signature="e#2280#2281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="432">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="929">
-          <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="300" column="19" selection-start-line="300" selection-start-column="19" selection-end-line="300" selection-end-column="19" />
+        <state relative-caret-position="1039">
+          <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
           <folding>
-            <element signature="method#checkName#0;class#UserController#0" />
-            <element signature="method#checkMail#0;class#UserController#0" />
-            <element signature="e#3007#3042#0" />
-            <element signature="method#buyTicket#0;class#UserController#0" />
-            <element signature="method#buyTicket#1;class#UserController#0" />
-            <element signature="method#takeTicket#0;class#UserController#0" />
-            <element signature="method#markTicket#0;class#UserController#0" />
-            <element signature="e#8549#8600#0" />
-            <element signature="method#reTicket#0;class#UserController#0" />
-            <element signature="e#10471#10472#0" expanded="true" />
-            <element signature="e#10513#10514#0" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/MovieMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/history.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="216">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/HallMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/CartMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="9" lean-forward="true" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/CartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="59" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/MovieService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/CartMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        <state relative-caret-position="262">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/MovieServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/HistoryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="125" column="41" selection-start-line="125" selection-start-column="41" selection-end-line="125" selection-end-column="41" />
+        <state relative-caret-position="95">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#addPhoto#0;class#MovieServiceImpl#0" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="method#getHHFMovieList#0;class#MovieServiceImpl#0" />
-            <element signature="e#3482#3483#0" expanded="true" />
-            <element signature="e#3509#3510#0" expanded="true" />
-            <element signature="e#3591#3592#0" expanded="true" />
-            <element signature="e#3617#3618#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/MovieMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
+        <state relative-caret-position="86">
           <caret line="164" column="51" selection-start-line="164" selection-start-column="51" selection-end-line="164" selection-end-column="51" />
           <folding>
             <element signature="method#addMovie#0;class#MovieController#0" />
@@ -1321,8 +1188,114 @@
             <element signature="method#getImg#0;class#MovieController#0" />
             <element signature="method#getMovieByName#0;class#MovieController#0" />
             <element signature="method#alterMovie#0;class#MovieController#0" />
-            <element signature="e#5292#5293#0" expanded="true" />
-            <element signature="e#5319#5320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/MovieServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-434">
+          <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addPhoto#0;class#MovieServiceImpl#0" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="method#getHHFMovieList#0;class#MovieServiceImpl#0" />
+            <element signature="e#3482#3483#0" expanded="true" />
+            <element signature="e#3531#3532#0" expanded="true" />
+            <element signature="e#3591#3592#0" expanded="true" />
+            <element signature="e#3641#3642#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/MovieMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="842">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/MovieMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/history">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="328" column="30" lean-forward="true" selection-start-line="328" selection-start-column="30" selection-end-line="328" selection-end-column="30" />
+          <folding>
+            <element signature="method#checkName#0;class#UserController#0" />
+            <element signature="method#checkMail#0;class#UserController#0" />
+            <element signature="method#register#0;class#UserController#0" />
+            <element signature="method#login#0;class#UserController#0" />
+            <element signature="method#buyTicket#0;class#UserController#0" />
+            <element signature="method#buyTicket#1;class#UserController#0" />
+            <element signature="method#takeTicket#0;class#UserController#0" />
+            <element signature="method#markTicket#0;class#UserController#0" />
+            <element signature="method#reTicket#0;class#UserController#0" />
+            <element signature="method#addAdmin#0;class#UserController#0" />
+            <element signature="method#putMovieToCart#0;class#UserController#0" />
+            <element signature="method#getMovieFromCart#0;class#UserController#0" />
+            <element signature="method#delSelf#0;class#UserController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/HistoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/HistoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/CartServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/HistoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
           </folding>
         </state>
       </provider>

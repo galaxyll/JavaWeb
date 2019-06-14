@@ -1,5 +1,7 @@
 package gh.ttms.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class Movie {
@@ -8,6 +10,7 @@ public class Movie {
     private String type;
     private Integer duration;
     private String introduction;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date releaseDate;
     private Float score;
     private String author;

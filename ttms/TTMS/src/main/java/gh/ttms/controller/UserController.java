@@ -1,10 +1,12 @@
 package gh.ttms.controller;
 
+import gh.ttms.pojo.Movie;
 import gh.ttms.pojo.Seat;
 import gh.ttms.pojo.Ticket;
 import gh.ttms.pojo.User;
 import gh.ttms.pojo.param.IDAndDate;
 import gh.ttms.pojo.param.IntAndString;
+import gh.ttms.pojo.param.Stringstring;
 import gh.ttms.service.*;
 import gh.ttms.service.impl.MailServiceImpl;
 import gh.ttms.util.VerificationCode;
@@ -40,6 +42,10 @@ public class UserController {
     private MailServiceImpl mailService;
     @Autowired
     private VerificationCode verificationCode;
+    @Autowired
+    private CartService cartService;
+    @Autowired
+    private HistoryService historyService;
 
     @RequestMapping("/checkName")
     @ResponseBody
@@ -299,5 +305,68 @@ public class UserController {
             map.put("message","创建管理员失败，请检查是否重名！");
         }
         return map;
+    }
+
+    @ResponseBody
+    @RequestMapping("/putMovieToCart")
+    public Map<String,String> putMovieToCart(@RequestBody Map<String,String> map)
+    {
+        Stringstring param = new Stringstring();
+        param.setName(map.get("username"));
+        param.setUrl(map.get("moviename"));
+        cartService.putMovieToCart(param);
+        Map<String,String> map2 = new HashMap<>();
+        map2.put("status","200");
+        map2.put("message","Ok");
+        return map2;
+    }
+
+    @ResponseBody
+    @RequestMapping("/putMovieToHistory")
+    public Map<String,String> putMovieToHistory(@RequestBody Map<String,String> map)
+    {
+        Stringstring param = new Stringstring();
+        param.setName(map.get("username"));
+        param.setUrl(map.get("moviename"));
+        historyService.putMovieToHistory(param);
+        Map<String,String> map2 = new HashMap<>();
+        map2.put("status","200");
+        map2.put("message","Ok");
+        return map2;
+    }
+
+    @ResponseBody
+    @RequestMapping("/getMovieFromCart")
+    public List<Movie> getMovieFromCart(@RequestBody Map<String,String> map)
+    {
+        List<Movie> movieList = new LinkedList<>();
+        List<String> movienameList = cartService.getMovieFromCart(map.get("username"));
+        for (String moviename:movienameList){
+            movieList.add(movieService.getMovieByName(moviename));
+        }
+        return movieList;
+    }
+
+    @ResponseBody
+    @RequestMapping("/getMovieFromHistory")
+    public List<Movie> getMovieFromHistory(@RequestBody Map<String,String> map)
+    {
+        List<Movie> movieList = new LinkedList<>();
+        List<String> movienameList = historyService.getMovieFromHistory(map.get("username"));
+        for (String moviename:movienameList){
+            movieList.add(movieService.getMovieByName(moviename));
+        }
+        return movieList;
+    }
+
+    @ResponseBody
+    @RequestMapping("/delSelf")
+    public Map<String,String> delSelf(@RequestBody Map<String,String> map)
+    {
+        userService.delUser(map.get("username"));
+        Map<String,String> map2 = new HashMap<>();
+        map2.put("status","200");
+        map2.put("message","Ok");
+        return map2;
     }
 }

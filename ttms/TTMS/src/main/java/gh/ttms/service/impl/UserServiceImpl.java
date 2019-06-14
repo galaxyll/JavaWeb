@@ -58,4 +58,9 @@ public class UserServiceImpl implements UserService {
         userMapper.addAdmin(user);
     }
 
+    @Override
+    public void delUser(String username) {
+        userMapper.deleteUserByName(username);
+    }
+
 }

@@ -10,4 +10,5 @@ public interface UserService  {
     void addMoney(User user,int money);
     void addMoney(User user,double money);
     public void addAdmin(User user);
+    public void delUser(String username);
 }

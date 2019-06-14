@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gh.ttms.dao.HistoryMapper">
+    <insert id="putMovieToHistory" parameterType="gh.ttms.pojo.param.Stringstring">
+        insert into history (username, moviename) values (#{name},#{url});
+    </insert>
+    <select id="getMovieFromHistory" parameterType="String" resultType="String">
+        select moviename from history where username=#{username};
+    </select>
+</mapper>
