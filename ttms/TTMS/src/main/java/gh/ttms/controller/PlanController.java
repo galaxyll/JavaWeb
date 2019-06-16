@@ -49,6 +49,7 @@ public class PlanController {
         return map;
     }
 
+
     @RequestMapping("/getDateByName")
     @ResponseBody
     public Set<Date> getShowDateByName(@RequestBody Map<String,String> param) throws ParseException {
@@ -70,6 +71,7 @@ public class PlanController {
     {
         return planService.getNewMovie();
     }
+
 
     @ResponseBody
     @RequestMapping("/getMoviePlanByDate")

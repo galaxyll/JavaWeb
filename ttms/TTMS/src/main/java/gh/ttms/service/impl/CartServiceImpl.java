@@ -22,4 +22,9 @@ public class CartServiceImpl implements CartService {
     public List<String> getMovieFromCart(String moviename) {
         return cartMapper.getMovieFromCart(moviename);
     }
+
+    @Override
+    public void delMovieFromCart(Stringstring param) {
+        cartMapper.delMovieFromCart(param);
+    }
 }

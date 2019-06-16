@@ -3,6 +3,7 @@ package gh.ttms.controller;
 import gh.ttms.pojo.Hall;
 import gh.ttms.service.HallService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,12 +21,19 @@ public class HallController {
 
     @ResponseBody
     @RequestMapping("/addHall")
-    public Map<String,String> addHall(@RequestBody Hall hall)
+        public Map<String,String> addHall(@RequestBody Hall hall)
     {
+
         Map<String,String> map = new HashMap<>();
-        hallService.addHall(hall);
         map.put("status","200");
         map.put("message","OjbK");
+        try{
+            hallService.addHall(hall);
+        }catch (Exception e){
+            map.put("status","500");
+            map.put("message","影厅不能重复添加！");
+        }
+
         return map;
     }
     @ResponseBody

@@ -8,4 +8,5 @@ import java.util.List;
 public interface CartService {
     public void putMovieToCart(Stringstring param);
     public List<String> getMovieFromCart(String moviename);
+    public void delMovieFromCart(Stringstring param);
 }

@@ -5,6 +5,6 @@
         insert into history (username, moviename) values (#{name},#{url});
     </insert>
     <select id="getMovieFromHistory" parameterType="String" resultType="String">
-        select moviename from history where username=#{username};
+        select distinct moviename from history where username=#{username};
     </select>
 </mapper>

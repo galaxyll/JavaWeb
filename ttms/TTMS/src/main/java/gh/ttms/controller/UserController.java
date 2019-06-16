@@ -64,8 +64,11 @@ public class UserController {
 
     @RequestMapping("/checkMail")
     @ResponseBody
-    public Map<String,String> checkMail(@RequestBody User user, HttpServletRequest request)
+    public Map<String,String> checkMail(@RequestBody User user)
     {
+        System.out.println("jinrufangfa");
+        System.out.println(user.getUsername());
+        System.out.println(user.getMailbox());
         Date date = new Date();
         System.out.println(date.toString());
         //HttpSession session = request.getSession();
@@ -368,5 +371,20 @@ public class UserController {
         map2.put("status","200");
         map2.put("message","Ok");
         return map2;
+    }
+
+    @ResponseBody
+    @RequestMapping("/delMovieFromCart")
+    public Map<String,String> delMovieFromCart(@RequestBody Map<String,String> map)
+    {
+        Stringstring param = new Stringstring();
+        param.setName(map.get("username"));
+        param.setUrl(map.get("moviename"));
+        cartService.delMovieFromCart(param);
+        Map<String,String> map2 = new HashMap<>();
+        map2.put("status","200");
+        map2.put("message","Ok");
+        return map2;
+
     }
 }
