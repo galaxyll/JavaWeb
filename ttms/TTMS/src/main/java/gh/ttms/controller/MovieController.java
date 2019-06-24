@@ -64,7 +64,7 @@ public class MovieController {
             File dest = new File(imgName);
             try {
                 file.transferTo(dest);
-                movieService.addPhoto(movieName, "http://192.168.43.133:8080/TTMS/img/" + imgName);
+                movieService.addPhoto(movieName, "http://47.94.92.88:8080/TTMS/img/" + imgName);
                 map.put("status", "200");
                 map.put("message", "OK");
             } catch (IllegalStateException | IOException e) {
@@ -91,7 +91,7 @@ public class MovieController {
     @RequestMapping("/img/{imgName}")
     public void getImg(@PathVariable("imgName") String imgName, HttpServletRequest request, HttpServletResponse response) throws IOException {
         ServletOutputStream img = response.getOutputStream();
-        String imgPath = "/home/galaxy/GitRepos/JavaWeb/ttms/TTMS/src/main/resources/img/"+imgName;
+        String imgPath = "/home/admin/galaxy/GitRepos/JavaWeb/ttms/TTMS/src/main/resources/img/"+imgName;
         FileInputStream fileInputStream = new FileInputStream(imgPath);
         int len = 0;
         byte[] buffer = new byte[1024];
