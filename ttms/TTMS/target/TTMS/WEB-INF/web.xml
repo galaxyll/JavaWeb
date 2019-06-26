@@ -62,7 +62,7 @@
     <load-on-startup>1</load-on-startup>
     <multipart-config>
       <!--文件保存路径-->
-      <location>/home/admin/galaxy/GitRepos/JavaWeb/ttms/TTMS/src/main/resources/img/</location>
+      <location>/home/galaxy/GitRepos/JavaWeb/ttms/TTMS/src/main/resources/img/</location>
       <max-file-size>204800</max-file-size>
       <max-request-size>1024000</max-request-size>
       <file-size-threshold>0</file-size-threshold>

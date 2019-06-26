@@ -143,7 +143,8 @@ public class UserController {
     @ResponseBody
     public Map<String,String> login(@RequestBody User user, HttpSession httpSession)
     {
-        httpSession.setAttribute("user",user);
+        System.out.println(user.getUsername()+":"+user.getPassword());
+        //httpSession.setAttribute("user",user);
         Map<String,String> map = new HashMap<>();
         User getuser = userService.login(user.getUsername(),user.getPassword());
         if (getuser!=null){
