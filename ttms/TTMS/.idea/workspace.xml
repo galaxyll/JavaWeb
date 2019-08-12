@@ -12,9 +12,7 @@
     <bookmark url="file://$PROJECT_DIR$/src" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3314623-ead2-40c9-aa96-3c1b1f261341" name="Default Changelist" comment="完善了注册部分的代码">
-      <change beforePath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/UserServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="c3314623-ead2-40c9-aa96-3c1b1f261341" name="Default Changelist" comment="完善了注册部分的代码" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,11 +61,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/UserServiceImpl.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/CartMapper.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/CartMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/CartService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/CartServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <folding>
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4356">
-              <caret line="152" column="26" selection-start-line="152" selection-start-column="26" selection-end-line="152" selection-end-column="26" />
+            <state relative-caret-position="252">
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="29" />
               <folding>
                 <element signature="method#checkName#0;class#UserController#0" />
                 <element signature="method#buyTicket#0;class#UserController#0" />
@@ -93,46 +126,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/plan.sql">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="4" column="12" selection-end-line="9" selection-end-column="2" />
+            <state relative-caret-position="1335">
+              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/seat.sql">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="3" column="11" selection-end-line="8" selection-end-column="2" />
+            <state relative-caret-position="-396">
+              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/ticket.sql">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="6" column="8" selection-end-line="14" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/cart.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="4" column="2" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/history.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="651">
+              <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
             </state>
           </provider>
         </entry>
@@ -217,8 +232,8 @@
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/util/VerificationCode.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/controller/MovieController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -249,10 +264,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="169" />
-    <option name="y" value="27" />
-    <option name="width" value="1211" />
-    <option name="height" value="522" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1853" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -260,8 +275,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -293,7 +306,59 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ttms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TTMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ttms" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TTMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ttms" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TTMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ttms" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TTMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ttms" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TTMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TTMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TTMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TTMS" type="b2602c69:ProjectViewProjectNode" />
@@ -314,13 +379,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561563847300" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563540445117" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -514,25 +581,30 @@
       <workItem from="1561354213700" duration="3436000" />
       <workItem from="1561358067186" duration="2777000" />
       <workItem from="1561381050609" duration="10000" />
-      <workItem from="1561591621855" duration="1022000" />
+      <workItem from="1561591621855" duration="1683000" />
+      <workItem from="1561647986642" duration="591000" />
+      <workItem from="1561696368579" duration="1629000" />
+      <workItem from="1563538309238" duration="919000" />
+      <workItem from="1564648408231" duration="36000" />
+      <workItem from="1565138514827" duration="1001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="402280000" />
+    <option name="totallyTimeSpent" value="407117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18001105" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18608503" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Learn" order="7" />
+      <window_info id="Learn" order="7" weight="0.33383685" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.26852846" />
@@ -543,7 +615,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32867885" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32939914" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22771214" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2274678" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.22878624" />
@@ -555,10 +627,10 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32965213" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32909995" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.28713417" />
+      <window_info anchor="right" id="Database" order="6" weight="0.25179458" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32965213" />
@@ -660,105 +732,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="完善了注册部分的代码" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0136d231-941c-4101-a7c7-e304bc9afc10/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/hall" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/CartServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/pojo/param/Stringstring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/CartMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4680">
-          <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/HallMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-          <folding>
-            <marker date="1560422036227" expanded="true" signature="613:752" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/PlanController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
-          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/SeatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/CartMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/HallMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.18.RELEASE/spring-webmvc-4.3.18.RELEASE.jar!/org/springframework/web/servlet/HandlerInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/MovieMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/interceptor/OptionsInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -805,16 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-753">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/CartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -882,9 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -903,13 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-421">
-          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/user.sql" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/sql/movie.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -925,14 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/user" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3276">
@@ -941,59 +886,6 @@
             <element signature="method#getMovieList#0;class#MovieController#0" />
             <element signature="method#getMovieByName#0;class#MovieController#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4356">
-          <caret line="152" column="26" selection-start-line="152" selection-start-column="26" selection-end-line="152" selection-end-column="26" />
-          <folding>
-            <element signature="method#checkName#0;class#UserController#0" />
-            <element signature="method#buyTicket#0;class#UserController#0" />
-            <element signature="method#buyTicket#1;class#UserController#0" />
-            <element signature="method#takeTicket#0;class#UserController#0" />
-            <element signature="method#markTicket#0;class#UserController#0" />
-            <element signature="method#reTicket#0;class#UserController#0" />
-            <element signature="method#addAdmin#0;class#UserController#0" />
-            <element signature="method#putMovieToCart#0;class#UserController#0" />
-            <element signature="method#putMovieToHistory#0;class#UserController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/plan.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="12" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/seat.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="3" column="11" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/ticket.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="6" column="8" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/cart.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="2" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/history.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -1020,39 +912,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/plan.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="12" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/seat.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="11" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/ticket.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="8" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/0136d231-941c-4101-a7c7-e304bc9afc10.SCHEMA:ttms">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>0136d231-941c-4101-a7c7-e304bc9afc10.SCHEMA:ttms</OriginalElement>
+          <nodes>
+            <node x="" y="">0136d231-941c-4101-a7c7-e304bc9afc10.TABLE:ttms.ticket</node>
+            <node x="" y="">0136d231-941c-4101-a7c7-e304bc9afc10.TABLE:ttms.history</node>
+            <node x="" y="">0136d231-941c-4101-a7c7-e304bc9afc10.TABLE:ttms.cart</node>
+            <node x="" y="">0136d231-941c-4101-a7c7-e304bc9afc10.TABLE:ttms.plan</node>
+            <node x="" y="">0136d231-941c-4101-a7c7-e304bc9afc10.TABLE:ttms.seat</node>
+            <node x="" y="">0136d231-941c-4101-a7c7-e304bc9afc10.TABLE:ttms.hall</node>
+            <node x="" y="">0136d231-941c-4101-a7c7-e304bc9afc10.TABLE:ttms.movie</node>
+            <node x="" y="">0136d231-941c-4101-a7c7-e304bc9afc10.TABLE:ttms.user</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.6073170731707322" x="315.0" y="567.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
     <entry file="uml://JAVA/">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
           <OriginalElement />
           <nodes>
-            <node x="" y="">com</node>
-            <node x="" y="">gh</node>
-            <node x="" y="">img</node>
-            <node x="" y="">netscape</node>
-            <node x="" y="">junit</node>
-            <node x="" y="">oracle</node>
-            <node x="" y="">test</node>
-            <node x="" y="">org</node>
-            <node x="" y="">idea</node>
-            <node x="" y="">aj</node>
-            <node x="" y="">google</node>
-            <node x="" y="">sun</node>
-            <node x="" y="">sql</node>
-            <node x="" y="">spring</node>
-            <node x="" y="">META-INF</node>
-            <node x="" y="">jdk</node>
-            <node x="" y="">groovyjarjarasm</node>
-            <node x="" y="">java</node>
-            <node x="" y="">groovy</node>
-            <node x="" y="">javax</node>
-            <node x="" y="">groovyjarjarcommonscli</node>
-            <node x="" y="">javafx</node>
-            <node x="" y="">groovyjarjarantlr</node>
+            <node x="173.0" y="375.0">com</node>
+            <node x="495.0" y="450.0">gh</node>
+            <node x="338.0" y="375.0">img</node>
+            <node x="261.0" y="75.0">netscape</node>
+            <node x="378.0" y="225.0">junit</node>
+            <node x="0.0" y="150.0">oracle</node>
+            <node x="181.0" y="300.0">test</node>
+            <node x="503.0" y="375.0">org</node>
+            <node x="354.0" y="300.0">idea</node>
+            <node x="0.0" y="525.0">aj</node>
+            <node x="189.0" y="150.0">google</node>
+            <node x="0.0" y="450.0">sun</node>
+            <node x="165.0" y="450.0">sql</node>
+            <node x="378.0" y="150.0">spring</node>
+            <node x="466.0" y="75.0">META-INF</node>
+            <node x="330.0" y="450.0">jdk</node>
+            <node x="0.0" y="75.0">groovyjarjarasm</node>
+            <node x="0.0" y="375.0">java</node>
+            <node x="0.0" y="225.0">groovy</node>
+            <node x="0.0" y="300.0">javax</node>
+            <node x="0.0" y="0.0">groovyjarjarcommonscli</node>
+            <node x="189.0" y="225.0">javafx</node>
+            <node x="317.0" y="0.0">groovyjarjarantlr</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="313.0" y="277.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-188.0" y="78.0" />
+          <SelectedNodes>
+            <node>groovy</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/gh.ttms">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>gh.ttms</OriginalElement>
+          <nodes>
+            <node x="10.0" y="151.0">gh.ttms.service</node>
+            <node x="0.0" y="75.0">gh.ttms.controller</node>
+            <node x="173.0" y="300.0">gh.ttms.dao</node>
+            <node x="0.0" y="0.0">gh.ttms.interceptor</node>
+            <node x="0.0" y="225.0">gh.ttms.pojo</node>
+            <node x="0.0" y="300.0">gh.ttms.util</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-354.0" y="-34.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1070,15 +1039,15 @@
           <ID>JAVA</ID>
           <OriginalElement>gh.ttms.controller</OriginalElement>
           <nodes>
-            <node x="" y="">gh.ttms.controller.PlanController</node>
-            <node x="" y="">gh.ttms.controller.SeatController</node>
-            <node x="" y="">gh.ttms.controller.MovieController</node>
-            <node x="" y="">gh.ttms.controller.HallController</node>
-            <node x="" y="">gh.ttms.controller.UserController</node>
+            <node x="-2.309307207837662" y="735.3953813855844">gh.ttms.controller.PlanController</node>
+            <node x="493.0" y="740.7837648705388">gh.ttms.controller.SeatController</node>
+            <node x="573.0" y="0.0">gh.ttms.controller.MovieController</node>
+            <node x="0.0" y="994.6256123163051">gh.ttms.controller.HallController</node>
+            <node x="0.0" y="0.0">gh.ttms.controller.UserController</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0990909090909091" x="482.157043166016" y="753.8759305210917" />
+          <settings layout="Hierarchic Group" zoom="1.399090909090908" x="143.0" y="892.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1090,10 +1059,319 @@
         </state>
       </provider>
     </entry>
+    <entry file="uml://JAVA/gh.ttms.dao">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>gh.ttms.dao</OriginalElement>
+          <nodes>
+            <node x="0.0" y="535.0">gh.ttms.dao.UserMapper</node>
+            <node x="0.0" y="0.0">gh.ttms.dao.MovieMapper</node>
+            <node x="421.0" y="0.0">gh.ttms.dao.PlanMapper</node>
+            <node x="0.0" y="794.0">gh.ttms.dao.SeatMapper</node>
+            <node x="429.0" y="961.0">gh.ttms.dao.mapper</node>
+            <node x="333.0" y="535.0">gh.ttms.dao.TicketMapper</node>
+            <node x="714.0" y="535.0">gh.ttms.dao.HallMapper</node>
+            <node x="0.0" y="961.0">gh.ttms.dao.HistoryMapper</node>
+            <node x="429.0" y="794.0">gh.ttms.dao.CartMapper</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.531598864711448" x="148.0" y="657.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/gh.ttms.dao.mapper">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>gh.ttms.dao.mapper</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/gh.ttms.interceptor">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>gh.ttms.interceptor</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">gh.ttms.interceptor.OptionsInterceptor</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.5" x="77.0" y="-111.0" />
+          <SelectedNodes>
+            <node>gh.ttms.interceptor.OptionsInterceptor</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/gh.ttms.pojo">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>gh.ttms.pojo</OriginalElement>
+          <nodes>
+            <node x="658.0" y="0.0">gh.ttms.pojo.User</node>
+            <node x="0.0" y="0.0">gh.ttms.pojo.Movie</node>
+            <node x="650.0" y="928.0">gh.ttms.pojo.param</node>
+            <node x="333.0" y="0.0">gh.ttms.pojo.Ticket</node>
+            <node x="959.0" y="0.0">gh.ttms.pojo.Hall</node>
+            <node x="0.0" y="928.0">gh.ttms.pojo.Seat</node>
+            <node x="325.0" y="928.0">gh.ttms.pojo.Plan</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9638972809667673" x="152.0" y="253.0" />
+          <SelectedNodes>
+            <node>gh.ttms.pojo.User</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/gh.ttms.service">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>gh.ttms.service</OriginalElement>
+          <nodes>
+            <node x="1724.0" y="468.0">gh.ttms.service.impl</node>
+            <node x="2692.0" y="92.0">gh.ttms.service.PlanService</node>
+            <node x="1972.0" y="126.5">gh.ttms.service.HallService</node>
+            <node x="3200.0" y="126.5">gh.ttms.service.TicketService</node>
+            <node x="2272.0" y="0.0">gh.ttms.service.MovieService</node>
+            <node x="1244.0" y="149.5">gh.ttms.service.CartService</node>
+            <node x="0.0" y="149.5">gh.ttms.service.SeatService</node>
+            <node x="808.0" y="149.5">gh.ttms.service.MailService</node>
+            <node x="404.0" y="161.0">gh.ttms.service.HistoryService</node>
+            <node x="1624.0" y="92.0">gh.ttms.service.UserService</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="gh.ttms.service.impl" target="gh.ttms.service.TicketService">
+              <point x="56.888888888888914" y="-15.0" />
+              <point x="1844.888888888889" y="448.0" />
+              <point x="3368.0" y="448.0" />
+              <point x="0.0" y="72.5" />
+            </edge>
+            <edge source="gh.ttms.service.impl" target="gh.ttms.service.UserService">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="107.0" />
+            </edge>
+            <edge source="gh.ttms.service.impl" target="gh.ttms.service.MovieService">
+              <point x="28.444444444444343" y="-15.0" />
+              <point x="1816.4444444444443" y="428.0" />
+              <point x="2472.0" y="428.0" />
+              <point x="0.0" y="199.0" />
+            </edge>
+            <edge source="gh.ttms.service.impl" target="gh.ttms.service.CartService">
+              <point x="-14.222222222222172" y="-15.0" />
+              <point x="1773.7777777777778" y="418.0" />
+              <point x="1424.0" y="418.0" />
+              <point x="0.0" y="49.5" />
+            </edge>
+            <edge source="gh.ttms.service.impl" target="gh.ttms.service.PlanService">
+              <point x="42.66666666666674" y="-15.0" />
+              <point x="1830.6666666666667" y="438.0" />
+              <point x="2936.0" y="438.0" />
+              <point x="0.0" y="107.0" />
+            </edge>
+            <edge source="gh.ttms.service.impl" target="gh.ttms.service.HallService">
+              <point x="14.222222222222172" y="-15.0" />
+              <point x="1802.2222222222222" y="418.0" />
+              <point x="2112.0" y="418.0" />
+              <point x="0.0" y="72.5" />
+            </edge>
+            <edge source="gh.ttms.service.impl" target="gh.ttms.service.HistoryService">
+              <point x="-42.66666666666674" y="-15.0" />
+              <point x="1745.3333333333333" y="438.0" />
+              <point x="596.0" y="438.0" />
+              <point x="0.0" y="38.0" />
+            </edge>
+            <edge source="gh.ttms.service.impl" target="gh.ttms.service.MailService">
+              <point x="-28.444444444444343" y="-15.0" />
+              <point x="1759.5555555555557" y="428.0" />
+              <point x="1016.0" y="428.0" />
+              <point x="0.0" y="49.5" />
+            </edge>
+            <edge source="gh.ttms.service.impl" target="gh.ttms.service.SeatService">
+              <point x="-56.888888888888914" y="-15.0" />
+              <point x="1731.111111111111" y="448.0" />
+              <point x="192.0" y="448.0" />
+              <point x="0.0" y="49.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.1167604049493813" x="-269.0" y="101.0" />
+          <SelectedNodes>
+            <node>gh.ttms.service.UserService</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/gh.ttms.service.impl">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>gh.ttms.service.impl</OriginalElement>
+          <nodes>
+            <node x="754.0" y="467.0">gh.ttms.service.impl.HallServiceImpl</node>
+            <node x="0.0" y="941.0">gh.ttms.service.impl.CartServiceImpl</node>
+            <node x="0.0" y="467.0">gh.ttms.service.impl.UserServiceImpl</node>
+            <node x="0.0" y="0.0">gh.ttms.service.impl.MovieServiceImpl</node>
+            <node x="461.0" y="750.0">gh.ttms.service.impl.SeatServiceImpl</node>
+            <node x="405.0" y="941.0">gh.ttms.service.impl.HistoryServiceImpl</node>
+            <node x="445.0" y="0.0">gh.ttms.service.impl.PlanServiceImpl</node>
+            <node x="0.0" y="750.0">gh.ttms.service.impl.MailServiceImpl</node>
+            <node x="373.0" y="467.0">gh.ttms.service.impl.TicketServiceImpl</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.510885608856089" x="452.0" y="980.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/user" />
+    <entry file="das://0136d231-941c-4101-a7c7-e304bc9afc10/schema/ttms/table/ticket" />
     <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="50" column="48" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/cart.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="2" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/history.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/mapper/CartMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/dao/CartMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/CartService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/service/impl/CartServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gh/ttms/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="method#checkName#0;class#UserController#0" />
+            <element signature="method#buyTicket#0;class#UserController#0" />
+            <element signature="method#buyTicket#1;class#UserController#0" />
+            <element signature="method#takeTicket#0;class#UserController#0" />
+            <element signature="method#markTicket#0;class#UserController#0" />
+            <element signature="method#reTicket#0;class#UserController#0" />
+            <element signature="method#addAdmin#0;class#UserController#0" />
+            <element signature="method#putMovieToCart#0;class#UserController#0" />
+            <element signature="method#putMovieToHistory#0;class#UserController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
         </state>
       </provider>
     </entry>
